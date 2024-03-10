@@ -1,0 +1,129 @@
+:root {
+    --font-in-use: 'Golos Text', sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-image: url('andrew-neel-jtsW--Z6bFw-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.some-text {
+    height: 100vh;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+ h1 {
+    font-family: var(--font-in-use);
+    font-size: 50px;
+    background: linear-gradient(#f2a6b8, #6bede3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+} 
+
+.form-container-object {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid #8e8484;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 80px;
+    /* border-color: #4f4f61; */
+}
+
+form {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 40px;
+}
+
+input:not(:nth-child(2)) {
+    font-family: var(--font-in-use);
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 2px 10px 2px 20px;
+    background-color: #8e8484;
+    color: white;
+}
+
+::-webkit-input-placeholder {
+    font-family: inherit;
+    color: white;
+}
+
+.form-entry svg {
+    fill: #124d27;
+    position: relative;
+    right: 30px;
+    top: 3px;
+    height: auto;
+}
+
+.form-selector {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-family: var(--font-in-use);
+    height: auto;
+    width: auto;
+}
+
+.form-selector input {
+    width: 20px;
+    height: 15px; 
+    position: relative;
+    top: 2px;      
+}
+
+.form-selector a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-in-use);
+    font-size: 18px;
+}
+
+.form-selector a:hover {
+    text-decoration: underline;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+    font-family: var(--font-in-use);
+    background-color: #8e8484;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+

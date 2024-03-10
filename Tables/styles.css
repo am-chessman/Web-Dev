@@ -1,0 +1,59 @@
+:root {
+    --th-font-size: 20px;
+    --table-font-family: 'Montserrat', sans-serif;
+    --tr-odd-bg: #dadada;
+    --tr-odd-bg: #bbbbbb;
+
+}
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: rgb(0,133,255);
+    background: linear-gradient(90deg, rgba(0,133,255,1) 0%, rgba(137,59,231,1) 55%, rgba(162,97,255,1) 100%);
+}
+
+table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    font-family: var(--table-font-family);
+    border-collapse: collapse;
+    color: #fff;
+    border: solid 2px red;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+th {
+    font-size: var(--th-font-size);
+    font-weight: 500!important;
+    text-align: left;
+    height: 50px;
+}
+
+th, td {
+    padding: 0px 0px 0px 60px;
+}
+
+td {
+    color: #000;
+    height: 45px;
+}
+
+tr:nth-child(even) {
+    background-color: #cdcccc;
+}
+
+tr:nth-child(odd) {
+    background-color: #dadada;
+}
+
+.rounded-corners {
+    background-color: #3C3B58!important;
+}
+

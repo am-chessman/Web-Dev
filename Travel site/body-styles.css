@@ -1,0 +1,17 @@
+:root {
+    --header-font: Montserrat, sans-serif;
+    --header-color: #ff6b29;
+    --small-text-font: 'Open Sans', sans-serif;
+    --button-color: #4bbfd8 !important;
+    --footer-background: #333;
+    --sub-text-color: #999;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}

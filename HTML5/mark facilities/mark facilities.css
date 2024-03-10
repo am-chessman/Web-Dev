@@ -1,0 +1,128 @@
+:root {
+    --border: solid 2px #a19090;
+    --input-font-size: 18px
+}
+
+body::-webkit-scrollbar {
+    width: 9px;
+    background: #0c124b;
+    border: none
+}
+
+
+body::-webkit-scrollbar-thumb    {
+    background-color: #5a5e53;
+    border-radius: 6px;
+}
+
+body {
+    background-image: url('images/greg-rosenke-6QnEf_b47eA-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.logo {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-right: 80px;
+}
+
+.logo > img {
+    width: auto;
+    height: 100px;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    width: 400px;
+    margin-top: 50px;
+    position: relative;
+    left: 420px;
+}
+
+input {
+    width: 350px;
+    height: 45px;
+    color: white;
+    border-radius: 8px;
+    outline: none;
+    background: inherit;
+    border: var(--border);
+    font-size: var(--input-font-size);
+    box-shadow: none;
+    padding: 0px 15px 0px 15px;
+    transition: background 500ms;
+    transform-origin: left;
+    font-family: 'Manrope', sans-serif;
+}
+
+input:hover {
+    /*background-color: #001740;*/
+    background: linear-gradient(to left, rgb(0, 23, 64) 0%, rgb(73, 91, 97) 50%) right;
+    background-size: 200%;
+    transition: 700ms ease-in;
+}
+
+input::-webkit-input-placeholder {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+.btn {
+    width: auto;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    border: var(--border);
+    font-size: var(--input-font-size);
+    transition: 500ms;
+    transform-origin: left;
+    background: inherit;
+}
+
+button:hover {
+    background-color: #001740;
+    cursor: pointer;
+}
+
+.side-bar {
+    margin: 0;
+    width: 100px;
+    float: left;
+    position: absolute;
+    top:160px;
+    height: 350px;
+    display: grid;
+    grid-auto-flow: row;
+    padding: 20px 0px 0px 12px;
+    background:none;
+    margin: 0;
+    border-right: solid 2px #808053;
+}
+
+.link a {
+    color: rgb(245, 221, 221);
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    transition: 1.5s;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}

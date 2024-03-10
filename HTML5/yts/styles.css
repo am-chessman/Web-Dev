@@ -1,0 +1,124 @@
+:root {
+    --bg-color: #1d1d1d;
+    --font: 'Arimo', sans-serif;
+    --body-font-size: .95em;
+    --font-size-rf: .85em;
+    --text-color: #919191;
+    --rest-text-color: #fff;
+
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+}
+
+.top-nav-bar {
+    width: 100%;
+    height: 60px;
+    border-bottom: solid 0.5px #333;
+    background-color: inherit;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.top-nav-bar > .lf-bar {
+    display: grid;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    gap: 380px;
+    padding-left: 80px;
+}
+
+.top-nav-bar > .lf-bar >.search-bar > #s-bar {
+    width: 250px;
+    height: 30px;
+    background-color: inherit;
+    color: #919191;
+    padding: 0px 10px 0px 10px;
+    border-radius: 20px;
+    border: solid 2px #333;
+    outline: none;
+    font-family: var(--font);
+}
+
+.top-nav-bar > .lf-bar >.search-bar > #s-bar::-webkit-input-placeholder {
+    color: #919191;
+    font-size: var(--body-font-size);
+    font-weight: bold;
+}
+
+.top-nav-bar > .rf-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+    position: relative;
+    left: -45px;
+}
+
+.top-nav-bar > .rf-bar > .link a {
+    font-family: var(--font);
+    font-size: var(--font-size-rf);
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.top-nav-bar .rf-bar > .account {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.top-nav-bar .rf-bar > .account a {
+    color: var(--rest-text-color);
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: var(--font-size-rf);
+    text-decoration: none;
+}
+
+.top-nav-bar .rf-bar > .account > .login {
+    border-right: solid 2px #919191;
+    padding-right: 10px;
+    color: var(--rest-text-color);
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 61px;   
+    background-image: url('background\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.bg-image > .lg-text,
+.bg-image > .sm-text {
+    transform: translateY(0%);
+}
+
+.bg-image > .lg-text {
+    color: var(--rest-text-color);
+    font-family: var(--font-size-rf);
+    font-weight: bold;
+    font-size: 50px;
+}
+

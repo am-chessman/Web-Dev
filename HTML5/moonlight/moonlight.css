@@ -1,0 +1,117 @@
+
+body {
+    margin: 0;
+    background-image: url('mateusz-klein-a1BlhTu0lMI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed, local;
+}
+
+.top-nav {
+    width: auto;  
+    height: 90px;  
+    display: grid;
+    grid-auto-flow: column;
+    gap: 60px;
+    justify-content: right;
+    padding: 8px 50px 0px 0px ;
+}
+
+#top-button > button {
+    width: 110px;
+    height: 50px;
+    background: inherit;
+    color: white;
+    border-radius: 25px;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    transition: 500ms;
+}
+
+.centre-button > button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.com-logo img {
+    width: 80px;
+    position: absolute;
+    left: 10px;
+    padding-bottom:10px;
+}
+
+.centre-content {
+    width: 1000px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px;
+    position: relative;
+    top: 150px;
+    left: 280px;
+}
+
+.centre-button > button {
+    width: 200px;
+    height: 55px;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 35px;
+    border-radius: 30px;
+    transition: 700ms;
+}
+
+.centre-button button:focus:hover {
+    width: 220px;
+}
+
+
+.centre-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-right: 230px;
+}
+
+.centre-text span {
+    width: 100%;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;   
+    font-size: 150px;
+    letter-spacing: 6px;
+    text-size-adjust: auto;    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#top-button button:hover {
+    background-color: #6d747e;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width:690px) {
+    .top-nav {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    #top-button {
+        position: relative;
+        right: 170px;
+        top: 100px;
+    }
+
+}

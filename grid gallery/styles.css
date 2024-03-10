@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 10px;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(8, 100px);
+    /* gap: 1em; */
+    border-collapse: collapse;
+    border-radius: 1em;
+    border: solid 4px #1f87aa;
+}
+
+.pic-box {
+    height: 100px;
+    border: none;
+    transition: all 0.8s;
+    transform-origin: center;
+}
+
+.pic-box:first-child {
+    border-top-left-radius: 0.6em;
+    border-bottom-left-radius: 0.6em;
+    background-image: url('https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.pic-box:nth-child(2) {
+    background-image: url('images/WR202206_GiraffeTranslocation_012_360559_reduced.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pic-box:nth-child(3) {
+    background-image: url('images/photo-1474511320723-9a56873867b5.avif');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pic-box:nth-child(4) {
+    background-image: url('images/pexels-pixabay-47547.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pic-box:nth-child(5) {
+    background-image: url('images/pexels-pixabay-45201.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pic-box:nth-child(6) {
+    background-image: url('images/image-62867-800.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pic-box:nth-child(7) {
+    background-image: url('images/https___tf-cmsv2-smithsonianmag-media.s3.amazonaws.com_filer_public_ec_e6_ece69181-708a-496e-b2b7-eaf7078b99e0_gettyimages-1310156391.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pic-box:last-child {
+    border-top-right-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+    background-image: url('images/Chonky-Animals-2-Quiz.avif');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pic-box:hover {
+    cursor: zoom-in;
+    transform-origin: center;
+    z-index: 1;
+    height: 200%;
+    width: 200%;
+    transform: translate(0, -25%);
+    transform-origin: center;
+}
+
+
+

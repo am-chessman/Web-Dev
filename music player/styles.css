@@ -1,0 +1,26 @@
+:root {
+    --bg-color: #222222;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    margin: 0;
+}
+
+.player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player > audio {
+    width: 600px;
+    outline: none;
+    border: none;
+}
+
+.player > audio::-webkit-media-controls-panel {
+    background: linear-gradient(to right, #fd00ba, #00d0ff);
+}

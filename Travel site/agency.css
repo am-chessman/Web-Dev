@@ -1,0 +1,334 @@
+.half-body-holder {
+    width: 100%;
+    height: 600px;
+    background-color: #4bbfd8 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.image-container {
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    width: 850px;
+    height: 650px;
+    background-color: #fff;
+    border-radius: 50px;
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/young-attractive-smiling-happy-man-woman-sunglasses-sitting-5.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.text-container {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    width: 540px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-rows: 100px 160px 100px;
+    gap: 20px;
+    padding-left: 40px;
+    z-index: 1;
+}
+
+.header-text {
+    text-transform: uppercase;
+    font-family: var(--header-font);
+}
+ 
+h2 {
+    padding: 50px 0px 0px 0px;
+}
+
+#emphasised-text {
+    color: var(--header-color);
+    font-size: 4.1em;
+    margin: 0;
+}
+
+.center-text {
+    font-family: var(--header-font);
+    margin: 0;
+}
+
+.explore-btn {
+    display: grid;
+    align-content: end;
+}
+
+button {
+    margin: 0px 0px 45px 0px;
+    height: 55px;
+    width: 210px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: var(--button-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--small-text-font);
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.travel-destination-section {
+    width: inherit;
+    margin-top: 400px;
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: row;
+}
+
+.travel-destination-section > .text-object {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: row;
+    text-align: center;
+}
+
+
+.travel-destination-section > .text-object > .header-element,
+.sub-header-element {
+    padding: 0px 320px 0px 320px;
+}
+
+.travel-destination-section > .text-object > .header-element > #header-text {
+    margin: 0;
+    font-family:var(--header-font);
+    text-transform: capitalize;
+    font-size: 3em;
+    color: var(--header-color);
+    text-align: center;
+}
+
+.travel-destination-section > .text-object > .sub-header-element > #sub-text {
+    margin-top: 20px;
+    text-align: center;
+    font-family: var(--small-text-font);
+    font-size: 1.6em;
+    color: #000;
+}
+
+.travel-grid-area {
+    margin-top: 30px;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 280px);
+    gap: 20px;
+    background-color: #fff !important;
+}
+
+.travel-grid-area > .travel-child {
+    height: 380px;
+    border-radius: 50px;
+    background-color: var(--header-color);
+}
+
+.travel-grid-area > .travel-child:first-child {
+    background-image: url('https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/36b3a68e70a45c4e8ca60be7/f.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.travel-grid-area > .travel-child:nth-child(2) {
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/beautiful-waterfall-streaming-in.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.travel-grid-area > .travel-child:nth-child(3) {
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/asian-woman-wearing-japanese-tra.jpg');
+    background-position: -40px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.travel-grid-area > .travel-child:nth-child(4) {
+    background-image: url('https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/4d66c117c11c5bf6aa2079e6/dd5aebf9-8321-90c1-eeb8-59b984c299e2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.travel-grid-area > .travel-child:nth-child(5) {
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/french-woman-with-baguettes-stre.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.travel-grid-area > .travel-child:nth-child(6) {
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/view-bridge-london-city_23-21494.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.travel-grid-area > .travel-child:nth-child(7) {
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/brown-rock-formation-seashore_19.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.travel-grid-area > .travel-child:nth-child(8) {
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/beautiful-girl-standing-viewpoin.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.blue-section {
+    width: 100%;
+    height: 1000px;
+    margin-top: 100px;
+    background-color: inherit;
+}
+
+.blue-section > .box-container {
+    width: inherit;
+    padding: 30px 0px 0px 300px;
+}
+
+.blue-section > .box-container > .box-element {
+    border-radius: 50px;
+}
+
+.blue-section > .box-container > .box-element:first-child {
+    margin: 0px 0px 0px 300px;
+    width: 900px;
+    height: 550px;
+    background-color: #b1e4ef;
+}
+
+.box-element:nth-child(2) {
+    position: relative;
+    top: -480px;
+    left: 80px;
+    background-color: #fff;
+    width: 900px;
+    height: 650px;
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/lady-ocean-summertime-woman-vaca.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.blue-section > .box-container > .box-element:last-child {
+    height: 400px;
+    width: 550px;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(100%, -180%);
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.text-holder {
+    width: 500px;
+    height: 100%;
+    margin: 0px 0px 0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#head-text-object {
+    color: var(--header-color);
+    font-size: 2em;
+    text-transform: capitalize;
+    font-family: var(--header-font);
+}
+
+#sub-text-element {
+    color: #000;
+    font-family: var(--small-text-font);
+    line-height: 28px;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.text-bg {
+    width: 100%;
+    background-color: #4bbfd8;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.text-container-object {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.text-header-element {
+    text-align: center;
+    padding: 0px 100px 0px 100px; 
+    margin-top: 50px;
+    display: grid;
+    place-content: center;
+}
+
+#txt-object {
+    font-family: var(--header-font);
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+}
+
+#sub-text-object {
+    color: #fff;
+    font-family: var(--small-text-font);
+    font-size: 1.3em;
+    line-height: 40px;
+    text-align: center;
+    padding-top: 30px;
+} 
+
+.explore-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+button {
+    margin-bottom: 0;
+    padding: 0;
+}
+/* .footer-section {
+    margin-top: 320px;
+}
+*/

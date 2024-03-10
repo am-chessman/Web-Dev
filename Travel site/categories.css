@@ -1,0 +1,114 @@
+:root {
+    --header-font: 'Montserrat', sans-serif;
+    --small-text-font: 'Open Sans', sans-serif;
+    --common-color: #ff6b29;
+    --footer-background: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-view-body {
+    height: 850px;
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/portrait-beautiful-young-asian-woman.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.box-1,
+.box-2 {
+    border-radius: 50px;
+}
+
+.box-1 {
+    width: 465px;
+    height: 325px;
+    background-color: #ff6b29;
+    position: relative;
+    top: 120px;
+    left: 300px;
+}
+
+.box-2 {
+    width: 520px;
+    height: 450px;
+    background-color: #fff;
+    position: relative;
+    top: -140px;
+    left: 370px;
+    z-index: 1;
+}
+
+.box-container {
+    width: 400px;
+    height: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ind-text,
+.center-text,
+.explore-btn {
+    margin: 30px 30px 0px 30px; 
+}
+
+.ind-text {
+    font-family: var(--small-text-font);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.center-text {
+    height: 150px;
+    font-size: 35px;
+    line-height: 1;
+    font-family: var(--header-font);
+    font-weight: 700;
+}
+
+.center-text > h2 {
+    margin: 0;
+    padding: 0;
+    color: #ff6b29;
+}
+
+.explore-btn {
+    margin-left: -60px;
+    display: flex;
+    justify-content: center;
+}
+
+.explore-btn > button {
+    background-color: var(--common-color);
+    color: #fff;
+    border-radius: 50px;
+    width: 250px;
+    height: 55px;
+    font-family: var(--small-text-font);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #ff6b29;
+    border: solid 2px #ff6b29;
+    cursor: pointer;
+}
+
+

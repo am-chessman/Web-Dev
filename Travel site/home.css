@@ -1,0 +1,133 @@
+h1 {
+    font-size: 3rem;
+    font-family: var(--header-font);
+    color: var(--header-color);
+    padding: 30px 0px 0px 0px;
+    margin: 0;
+    text-align: center;
+}
+
+.main-content {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 40px 0px 0px 0px;
+}
+
+.grid-alignment {
+    width: 1162px;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2, 364px);
+    gap: 30px;
+    background-color: inherit;
+    padding: 10px 0px 0px 0px;
+}
+
+.top-row, .bottom-row {
+    margin: 0;
+    padding: 0;
+    max-width: inherit;
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+.min-image-1, 
+.min-image-2, 
+.max-image-1, 
+.max-image-2 {
+    border-radius: 50px;
+    background-color: inherit;
+}
+
+.min-image-1, .min-image-2 {
+    width: 290px;
+    height: 364px;
+}
+
+.max-image-1, .max-image-2 {
+    width: 580px;
+    height: 364px;
+}
+
+.min-image-1 {
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/island-travel-destinations-idyll.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.min-image-2 {
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/view-windmill-zaanse-schans-neth.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.max-image-1 {
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/lake-o-hara-yoho-national-park-w.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.max-image-2 {
+    background-image: url('https://assets.nicepagecdn.com/d2cc3eaa/1631659/images/beautiful-paradise-island-with-b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.text-box-1, .text-box-2 {
+    width: 230px;
+    height: 364px;
+    background-color: inherit;
+    color: #fff;
+    text-align: left;
+    font-family: var(--small-text-font);
+    font-size: 16px;
+    color: #999;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+
+.explore-btn {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.explore-btn > button {
+    background-color: var(--button-color);
+    color: #fff;
+    padding: 13px 54px;
+    border-radius: 50px;
+    width: 300px;
+    height: 55px;
+    font-family: var(--small-text-font);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #4bbfd8;
+    border: solid 2px #4bbfd8;
+    cursor: pointer;
+}

@@ -1,0 +1,94 @@
+:root {
+    --web-font: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40px 8px 40px;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: solid 3px #c9d5e1;
+}
+
+.nav-bar > .left-nav, .right-nav {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar > .right-nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar > .left-nav a,
+.nav-bar > .right-nav a {
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-bar svg {
+    fill: #3374b5;
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+
+.nav-b {
+    background-color: #eaf1f9;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    align-items: center;
+    padding: 0px 100px 0px 50px;
+}
+
+.nav-b > .sig-logo {
+    position: absolute;
+    top: 120px;
+}
+
+.nav-b > .search-bar {
+    padding-left: 320px;
+}
+
+.nav-b > .menu-item {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#search {
+    color: blue;
+    width: 600px;
+    height: 45px;
+    outline: none;
+    border: none;
+    padding: 0px 30px 0px 15px;
+} 
+
+#search::-webkit-input-placeholder {
+    font-family: var(--web-font);
+    font-size: 16px;
+}
+
+.centre-img {
+    height: 350px;
+    background-image: url(images/Toppbild-vår.jpg);
+}
+

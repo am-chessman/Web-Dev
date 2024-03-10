@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+            @font-face {
+                font-family: 'Light box', sans-serif;
+                src: url(font/Fontspring-DEMO-lightbox21-medium-1.otf);
+            }
+
+            body {
+                padding: 0;
+                margin: 0;
+                height: 100vh;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .mesh {
+                padding: 50px 50px 0px 50px;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 300px 800px;
+                column-gap: 100px;
+            }
+
+            .work-sum {
+                margin-bottom: 0;
+                text-align: left;
+                word-wrap: break-word;
+                padding-bottom: 30px;
+                line-height: 30px;
+                font-family: inherit;
+                font-size: 17px
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            h2 {
+                margin-bottom: 0;
+                color: #00157e;
+            }
+
+            .item-2 > h2 {
+                margin: 0;
+            }
+
+            .item-4 > h2 {
+                margin: 40px 0px 0px 0px;
+            }
+
+            h3 {
+                margin: 15px 0px 0px 0px;
+                font-family: inherit;
+                font-size: 19px;
+                font-weight: 400;
+                color: #0026cf;
+            }
+
+            hr {
+                margin: 10px 0px;
+            }
+
+            .col-2, .grid-section {
+                display: grid;
+                grid-auto-flow: row;
+            }
+
+            .exp-object {
+                display: grid;
+                grid-template-columns: 85% 15%; 
+            }
+
+            .job-type-element {
+                display: grid;
+                align-content: center;
+            }
+
+            .full-time {
+                background-color: #99FFA7;
+                color: #00157e;
+                outline: none;
+                border: none;
+                height: 35px;
+                border-radius: 20px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            .download {
+                margin-top: 50px;
+                height: 45px;
+                width: 180px;
+                background-color: #002DFF;
+                color: #fff;
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .download:hover {
+                cursor: pointer;
+            }
+
+            img {
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="mesh">
+            <div class="col-1">
+                <img src="https://cdn.theorg.com/1be33678-2943-4eb1-bef2-308af7b1d085_thumb.jpg" alt="Edward">
+                <h2>Edward Lobanovskiy</h2>
+                <h3> Software Developer</h3>
+                <p> ed2klobankovskiy@gmail.com</p>
+                <hr>
+
+                <p> Los Angeles, CA</p>
+                <hr>
+
+                <p  > Full time </p>
+                <hr>
+
+                <p> Sales and Marketing </p>
+                <div class="download-btn">
+                    <a href="#" download="">
+                        <button class="download">Download Resume</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="item-2">
+                    <h2>Professional Summary</h2>
+                    <p class="work-sum">Lorem Ipsum is simply dummy text of t the printing and typesetting industry. Lorem ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        d galley of type and scrambled it to make a type specimen book. It has survived not only five
+                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem lpsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum. 
+                    </p>
+                </div>
+    
+                <div class="grid-section">
+                    <div class="item-3">
+                        <h2>Work Experience</h2>
+                        <div class="exp-object">
+                            <div class="text">
+                                <h3>Senior Front End Developer</h3>
+                                <p>apple inc.</p>
+                            </div>
+                            <div class="job-type-element">
+                                <button class="full-time">Full Time</button>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="exp-object">
+                            <div class="text">
+                                <h3>Junior Front End Developer</h3>
+                                <p>Figma</p>
+                            </div>
+                            <div class="job-type-element">
+                                <button class="full-time">Full Time</button>
+                            </div>
+                        </div>
+                        <hr>
+    
+                        <div class="exp-object">
+                            <div class="text">
+                                <h3>Intern Front End Developer</h3>
+                                <p>Microsoft</p>
+                            </div>
+                            <div class="job-type-element">
+                                <button class="full-time">Full Time</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <div class="item-4">
+                        <h2><b>Education</b></h2>
+                        <h3>Masters in Software Engineering</h3>
+                        <p>Massechusets Institute of Technology </p>
+                        <hr>
+    
+                        <h3>Bachelor in Software Engineering</h3>
+                        <p>Massechusets Institute of Technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

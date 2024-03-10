@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --links-font: 'Cinzel', serif;
+    --links-font-size: 1.2em;
+    --nav-links-color: #481313;
+    --body-text-font: 'Lexend Deca', sans-serif;
+    --body-text-font-size: 6em;
+}
+
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('ziphaus-NizskSsegM8-unsplash.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+.nav-bar {
+    height: 120px;
+    font-family: var(--links-font);
+    font-size: var(--links-font-size);
+    /* background-color: #fff; */
+    /* color: ; */
+    display: grid;
+    align-content: end;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding: 0px 20px 0px 30px ;
+}
+
+.nav-bar > .left-nav {
+    display: grid;
+    grid-auto-flow: row;
+    text-transform: lowercase;
+    justify-content: center;
+    align-content: center;
+}
+
+.nav-bar > .right-nav {
+    display: grid;
+    grid-auto-flow: column;
+    text-transform: lowercase;
+    justify-content: space-between;
+    gap: 5px;
+    align-content: center
+}
+
+svg {
+    position: relative;
+    top: 15%;
+    transform: scale(1.2);
+    fill: var(--nav-links-color);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transform-origin: center;
+    transition: all .3s;
+    color: var(--nav-links-color);
+}
+
+
+a:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.body-text {
+    height: 500px;
+    padding: 0px 200px 0px 200px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    text-align: center;
+    align-content: end;
+}
+
+.body-text > .left-text, .right-text {
+    text-transform: uppercase;
+    font-family: var(--links-font);
+    font-size: var(--body-text-font-size);
+    color: var(--nav-links-color);
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+}

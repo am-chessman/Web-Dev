@@ -1,0 +1,187 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(43, 40, 40);
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    min-width: 800px;
+}
+
+.top-bar > .heading {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+}
+
+.search svg{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    fill: rgb(78, 89, 119);
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-content: right;
+    position: relative;
+    right: 50px;
+    bottom: 30px;
+}
+
+#search-box{
+    padding: 0px 30px 0px 10px !important;
+    width: 250px;
+}
+
+#search-box input {
+    padding-right: 50px;
+}
+
+.search input {
+    border-radius: 7.9px;
+    background-color: rgb(53, 60, 77);
+    color: white;
+    border: solid 2px rgb(78, 89, 119);
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-rendering: auto;
+    writing-mode: horizontal-tb !important;
+    cursor: text;
+    box-sizing: border-box;
+    height:48px;
+}
+
+.search > input::-webkit-input-placeholder {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.search > input:focus {
+    outline: none;
+    border:  solid 2px rgb(78, 89, 119);
+}
+
+.nav-bar {
+    background-color: rgb(53, 60, 77);
+    width: auto;
+    padding: 20px 30px 10px 30px;
+    position: sticky;
+    top: 0px;
+}
+
+.nav-bar > .nav-links {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.link {
+    width: 60px;
+    text-align: center;
+}
+
+.nav-links a:hover {
+    cursor: pointer;
+    letter-spacing: 0.03cm;
+    transition: 1s;
+    color: rgb(94, 169, 235);
+    transition-timing-function: ease-in-out;    
+}
+
+
+.login-button {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    min-width: 120px;
+    border: solid rgb(76, 90, 102);
+    color: white;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+
+.login-button:hover {
+    border: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.body-wrapper {
+    height: 100%;
+    background-image: url(/Search/images/philip-oroni-KM_SItStu_s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.some-text {
+    padding: 10px 30px 0px 30px;
+}
+
+.scroll-button{
+    display: flex;
+    flex-direction: row;
+    align-content: right;
+    justify-content: right;
+    padding-right: 20px;
+    scroll-behavior: smooth;
+}
+
+.scroll-button svg:hover {
+    opacity: 2;
+    fill: rgb(32, 66, 153);
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.bottom-bar {    
+    padding: 50px;
+    background-color: rgb(53, 60, 77);
+}
+
+
+footer > .socials {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 400px;
+    position: relative;
+    top: 20px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+
+.back-image img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.back-image {
+    background-size: cover;
+}
