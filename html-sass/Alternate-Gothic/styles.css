@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'News Gothic', sans-serif;
+    src: url('News-Gothic/News-Gothic.otf');
+}
+
+:root {
+    --text-color: #a1784a;
+    --mid-text-font: 'News Gothic', sans-serif;
+}
+
+body {
+    background-color: #f8f1e5;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: center;
+    place-items: center;
+}
+
+
+img {
+    width: 80px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    column-gap: 100px;
+}
+
+li {
+    font-size: 9px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.left-nav {
+    margin: 0;
+    padding: 0px;
+}
+
+.mid-text {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.mid-text > p {
+    text-transform: uppercase;
+    font-family: var(--mid-text-font);
+    font-size: 70px;
+    font-weight: 600;
+}
