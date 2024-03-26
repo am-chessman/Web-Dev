@@ -1,24 +1,21 @@
-Merienda Variable Font
-======================
+Edu NSW ACT Foundation Variable Font
+====================================
 
-This download contains Merienda as both a variable font and static fonts.
+This download contains Edu NSW ACT Foundation as both a variable font and static fonts.
 
-Merienda is a variable font with this axis:
+Edu NSW ACT Foundation is a variable font with this axis:
   wght
 
 This means all the styles are contained in a single file:
-  Merienda/Merienda-VariableFont_wght.ttf
+  Edu_NSW_ACT_Foundation/EduNSWACTFoundation-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Merienda:
-  Merienda/static/Merienda-Light.ttf
-  Merienda/static/Merienda-Regular.ttf
-  Merienda/static/Merienda-Medium.ttf
-  Merienda/static/Merienda-SemiBold.ttf
-  Merienda/static/Merienda-Bold.ttf
-  Merienda/static/Merienda-ExtraBold.ttf
-  Merienda/static/Merienda-Black.ttf
+in those cases you can use the static font files for Edu NSW ACT Foundation:
+  Edu_NSW_ACT_Foundation/static/EduNSWACTFoundation-Regular.ttf
+  Edu_NSW_ACT_Foundation/static/EduNSWACTFoundation-Medium.ttf
+  Edu_NSW_ACT_Foundation/static/EduNSWACTFoundation-SemiBold.ttf
+  Edu_NSW_ACT_Foundation/static/EduNSWACTFoundation-Bold.ttf
 
 Get started
 -----------
