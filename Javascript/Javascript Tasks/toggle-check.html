@@ -5,29 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toggle checker</title>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
         .gaming-btn {
             border: none;
             outline: none;
-            height: 30px;
-            width: 70px;
+            height: 40px;
+            width: 100px;
             border-radius: 5px;
             font-size: 12px;
             font-weight: bold;
             cursor: pointer;
+            background-color: #000;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <button class=gaming-btn onclick="">Gaming</button>
+    <button class=gaming-btn onclick="changeColor()">Gaming</button>
 
     <script>
-        const buttonObject = document.querySelector('.gaming-btn')
-        function is_togled(){
-            currentColor = buttonObject.style.backgroundColor
-            if (currentColor !== "black"){
-                
+        function changeColor() {
+            const button = document.querySelector('.gaming-button');
+            const currentColor = button.style.backgroundColor;
+
+            if (currentColor === 'black') {
+                button.style.backgroundColor = 'blue';
+            } else {
+                button.style.backgroundColor = 'black';
             }
-            if buttonObject.innerHTML
         }
     </script>
 </body>
