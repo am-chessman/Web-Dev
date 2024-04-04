@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String check</title>
+</head>
+<body>
+    <script>
+        arrayOfstrings = [23, 'aeroplanes', 'boats', 'search', 'cars', 'search']
+
+        searchFound = false
+
+        searchObject = {
+            word: '',
+            index: ''
+        }
+
+        for (item of arrayOfstrings) {
+            if (item === 'search' && !searchFound){
+                searchObject.word = item
+                searchObject.index = arrayOfstrings.indexOf(item)
+                console.log(searchObject)
+                break
+            }
+        }
+
+        if (searchFound) {
+            console.log('Not Found')
+        }
+    </script>
+</body>
+</html>

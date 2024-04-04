@@ -10,7 +10,7 @@
             justify-content: center;
         }
 
-        .gaming-btn {
+        .btn {
             border: none;
             outline: none;
             height: 40px;
@@ -22,21 +22,26 @@
             background-color: #000;
             color: #fff;
         }
+
+        .buttonOn {
+            background-color: #c5c5c5;  
+            color: #000;  
+        }
+
     </style>
 </head>
 <body>
-    <button class=gaming-btn onclick="changeColor()">Gaming</button>
+    <button class=btn onclick="toggle()">Gaming</button>
 
     <script>
-        function changeColor() {
-            const button = document.querySelector('.gaming-button');
-            const currentColor = button.style.backgroundColor;
+        function toggle(){
+            let buttonElement = document.querySelector('.btn');
 
-            if (currentColor === 'black') {
-                button.style.backgroundColor = 'blue';
-            } else {
-                button.style.backgroundColor = 'black';
+            if (!buttonElement.classList.contains('buttonOn')){
+                buttonElement.classList.add('buttonOn')
             }
+            else {
+                buttonElement.classList.remove('buttonOn')}
         }
     </script>
 </body>
