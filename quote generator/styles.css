@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+
 body {
     padding: 0;
     margin: 0;
@@ -5,20 +8,70 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Merienda", cursive;
+    background: linear-gradient(to left, #d2cef7, #ca9a9a );
 }
 
 .quote-holder {
     display: grid;
     justify-content: center;
     place-items: center;
-    grid-template-rows: 100px 200px;
-    width: 700px;
-    background-color: red;
+    grid-auto-flow: row;
+    width: 500px;
+    background-color: #d3c2c2;
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 70px;
+    font-family: inherit;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-#quote,
-#author {
+
+.quote,
+.author {
     display: grid;
     justify-content: center;
     width: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.quote {
+    display: block;
+    font-size: 30px;
+    height: 300px;
+}
+
+.q-mark::before {
+    content: '❝';
+    font-size: 100px;
+    width: 50px;
+    height: 130px;
+    display: block;
+    position: relative;
+    right: 0;
+    top: 25px;
+}
+
+.author {
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    color: #000080;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    margin: 5% 0 5% 60%;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #f0f8ff;
+    background-color: #000;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
