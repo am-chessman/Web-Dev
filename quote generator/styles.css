@@ -19,6 +19,7 @@ body {
     grid-auto-flow: row;
     width: 500px;
     background-color: #d3c2c2;
+    color: #000000;
     text-align: center;
     padding: 0 20px;
     border-radius: 70px;
@@ -57,7 +58,7 @@ body {
     font-size: 20px;
     padding-top: 20px;
     font-weight: bold;
-    color: #000080;
+    color: #5f01bc;
 }
 
 button {
