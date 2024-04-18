@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Index</title>
+</head>
+<body>
+    <script>
+        arrayTocheck = ['hello', 'world', 'search', 'good', 'pineapple', 'cars', 'airports', 'pizzas', 'cologne', 'berlin']
+
+        function findIndex(array, word){
+
+            let wordFound = false
+
+            for (var string of array) {
+                if (string === word && !wordFound) {
+                    var index =  array.indexOf(string)
+                    console.log(index)
+                    wordFound = true
+                    break
+                }
+            }
+            
+            if (!wordFound) {
+                console.log(-1)
+            }
+        }
+
+        findIndex(arrayTocheck, 'hello')
+    </script>
+</body>
+</html>

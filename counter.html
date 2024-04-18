@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Inter", sans-serif;
+        }
+
+        .counter-holder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .counter {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 150px;
+            margin: 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 100px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 72px;
+            background: -webkit-linear-gradient(#0055, #4444, #565656);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        button {
+            width: 230px;
+            height: 50px;
+            font-size: 20px;
+            text-transform: capitalize;
+            border-radius: 10px;
+            border: solid 1px transparent;
+            cursor: pointer;
+            font-family: inherit;
+            background: linear-gradient(to right, #0055, #4444, #565656);
+        }
+
+        .color-styles {
+            background: radial-gradient(#3f5efb, #fc466b);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .color-styles-else {
+            background: radial-gradient(circle at center, #833ab4, #fd1d1d, #fcb045);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="counter-holder">
+        <div class="counter">
+            <h2>Counter</h2>
+            <h1 class="num">0</h1>
+        </div>
+        <div class="buttons">
+            <button onclick="decrement()
+                    signCheck()">
+                decrease
+            </button>
+            <button onclick="reset()">
+                reset
+            </button>
+            <button onclick="increment()
+                    signCheck()">
+                increase
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let counterNum = Number(document.querySelector('.num').innerHTML)
+
+        function increment() {
+            counterNum += 1
+            document.querySelector('.num').innerHTML = counterNum
+        }
+
+        function decrement() {
+            counterNum -= 1
+            document.querySelector('.num').innerHTML = counterNum
+        }
+
+        function reset() {
+            counterNum *= 0
+            document.querySelector('.num').innerHTML = counterNum
+        }
+
+        function signCheck() {
+            let numSign = Math.sign(counterNum)
+            console.log(numSign)
+            
+            if (numSign == -1) {
+                if (!document.querySelector('.num').classList.contains('color-styles-else')) {
+                    document.querySelector('.num').classList.add('color-styles')
+                }
+                else {
+                    document.querySelector('.num').classList.remove('color-styles-else')
+                }
+            }
+            else{
+                document.querySelector('.num').classList.remove('color-styles')
+                document.querySelector('.num').classList.add('color-styles-else')
+            }
+        }
+    </script>
+</body>
+</html>
