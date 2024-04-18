@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    background-color: aqua;
+}
+
+body, 
+.timer-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-holder {
+    background-color: blue;
+    width: 700px;
+    height: 280px;
+    border: none;
+    border-radius: 10pc;
+    font-size: 100px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
