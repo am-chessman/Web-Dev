@@ -45,14 +45,6 @@ body {
     top: 25px;
 }
 
-.quote, .author {
-    display: grid;
-    justify-content: center;
-    width: inherit;
-    margin: 0px;
-    padding: 0px;
-}
-
 .quote {
     display: block;
     font-size: 30px;
