@@ -1,14 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 
-body {
+body,
+.body-container {
     padding: 0;
     margin: 0;
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Merienda", cursive;
     background: linear-gradient(to left, rgb(210, 206, 247), rgb(202, 154, 154));
+}
+
+.bg-color,
+.quote-holder {
+    background: none;
+    background-color: #000;
+    color: #fff;
+}
+
+.bg-color > .quote-holder {
+    background: none;
+    background-color: #000;
+}
+
+.bg-color > .quote-holder > button {
+    background: none;
+    background-color: #cbcbcb;
+    color: #000;
+}
+
+.bg-color > .toggle-btn span {
+    background: none;
+    color: #fff;
+}
+
+.toggle-btn {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 10px;
+    justify-content: center;
+    place-items: center;
+    color: #000;
+    transform: translate(300%, 50%);
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    -webkit-transition: .4s;
+    transition: .4s;;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #949494;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background: linear-gradient(128.87deg, #9780e5 14.05%, #e666cc 89.3%)    
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px linear-gradient(128.87deg, #9780e5 14.05%, #e666cc 89.3%);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #000;
+    border: none;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+    border: solid 1px #000000;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 .quote-holder {
@@ -17,10 +115,12 @@ body {
     place-items: center;
     grid-auto-flow: row;
     width: 500px;
-    background-color: rgb(211, 194, 194);
+    background-color: none;
+    background: transparent;
+    /* background-color: rgb(211, 194, 194); */ /*Suits the dark mode aesthetic better*/
     text-align: center;
     font-family: inherit;
-    box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px; */ /*Suits the dark mode aesthetic better*/
     padding: 0px 20px;
     border-radius: 70px;
 }
