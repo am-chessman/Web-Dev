@@ -21,13 +21,28 @@ body {
     color: #00000c;
 }
 
+.nav-bar > #link {
+    display: grid;
+    width: 80px;
+}
+
 .nav-bar > #link > a {
+    width: 100%;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     text-decoration: none;
     color: #00000c;
     font-family: inherit;
+    transition: all 1s;
+}
+
+.nav-bar > #link > a:hover {
+    letter-spacing: 5px;
+}
+
+.bg-color > .nav-bar > #link a {
+    color: #fff;
 }
 
 .quote-holder {
@@ -44,10 +59,6 @@ body {
 .bg-color {
     height: 100vh;
     background: #000;
-}
-
-.bg-color > .nav-bar > #link a {
-    color: #fff;
 }
 
 .bg-color > .nav-bar > .toggle-btn > #light-mode {
