@@ -12,27 +12,43 @@
 </head>
 <body>
     <main class="body-container">
-        <div class="quote-holder">
-            <p class="quote">
-                Success is not final, failure is not fatal: It is the courage to continue that counts.
-            </p>
-            <p class="author">
-                Winston Churchill
-            </p>
-            <button onclick="randomQuote()">
-                Next quote
-            </button>
+        <div class="nav-bar">
+            <div id="link">
+                <a href="#">home</a>
+            </div>
+            <div id="link">
+                <a href="#">about</a>
+            </div>
+            <div id="link">
+                <a href="#">contact</a>
+            </div>
+            <div id="link">
+                <a href="#">help</a>
+            </div>
+            <div class="toggle-btn">
+                <label class="toggle">
+                    <input class="toggleBtn" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span id="light-mode">DARK MODE</span>
+            </div>      
         </div>
         
-        <div class="toggle-btn">
-            <span>Dark mode</span>
-            <label class="toggle">
-                <input class="toggleBtn" type="checkbox">
-                <span class="slider round"></span>
-            </label>
-            <div>
+        <div class="body-content">
+            <div class="quote-holder">
+                <p class="quote">
+                    Success is not final, failure is not fatal: It is the courage to continue that counts.
+                </p>
+                <div class="author-and-btn">
+                    <p class="author">
+                        Winston Churchill
+                    </p>
+                    <button onclick="randomQuote()">
+                        Next quote
+                    </button>
+                </div>
             </div>
-        </div>      
+        </div>
     </main>
     <script src="script.js"></script>
 </body>

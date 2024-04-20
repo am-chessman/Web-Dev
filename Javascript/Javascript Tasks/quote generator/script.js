@@ -418,10 +418,13 @@ quoteSelector.classList.add('q-mark')
 const toggleBtn = document.querySelector('.toggleBtn');
 const slider = document.querySelector('.slider');
 const body =  document.querySelector('.body-container')
+const navBar = document.querySelector('.nav-bar')
+const darkModeTxt = document.getElementById('light-mode')
+
 toggleBtn.addEventListener('change', function() {
     if (this.checked) {
         body.classList.add('bg-color')
-        console.log('checked')
+        console.log(body)
     } else if (body.classList.contains('bg-color')) {
         body.classList.remove('bg-color')
         console.log('removed')

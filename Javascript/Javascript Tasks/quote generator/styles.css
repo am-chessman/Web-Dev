@@ -1,56 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-body,
-.body-container {
+
+body {
     padding: 0;
     margin: 0;
     height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: "Merienda", cursive;
     background: linear-gradient(to left, rgb(210, 206, 247), rgb(202, 154, 154));
 }
 
-.bg-color,
+.nav-bar {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    column-gap: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Architects Daughter", cursive;
+    color: #00000c;
+}
+
+.nav-bar > #link > a {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-decoration: none;
+    color: #00000c;
+    font-family: inherit;
+}
+
 .quote-holder {
     background: none;
     background-color: #000;
     color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.bg-color > .quote-holder {
+.bg-color {
+    height: 100vh;
+    background: #000;
+}
+
+.bg-color > .nav-bar > #link a {
+    color: #fff;
+}
+
+.bg-color > .nav-bar > .toggle-btn > #light-mode {
+    background: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.bg-color > .body-content > .quote-holder {
     background: none;
     background-color: #000;
 }
 
-.bg-color > .quote-holder > button {
+.bg-color > .body-content > .quote-holder > .author-and-btn > .author {
+    color: #0000ff;
+}
+
+.bg-color > .body-content > .quote-holder > .author-and-btn button {
     background: none;
     background-color: #cbcbcb;
     color: #000;
 }
 
-.bg-color > .toggle-btn span {
-    background: none;
-    color: #fff;
-}
-
 .toggle-btn {
     display: grid;
-    grid-auto-flow: row;
-    row-gap: 10px;
+    grid-auto-flow: column;
+    column-gap: 30px;
     justify-content: center;
     place-items: center;
-    color: #000;
-    transform: translate(300%, 50%);
+    margin: auto;
+    font-family: inherit;
+    color: #00000c;
 }
 
 .toggle {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 45px;
+    height: 20px;
 }
 
 .toggle input {
@@ -74,10 +110,10 @@ body,
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 18px;
+    width: 18px;
+    left: 0px;
+    top: 0px;
     background-color: #949494;
     -webkit-transition: .4s;
     transition: .4s;
@@ -92,9 +128,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(25.6px);
+    -ms-transform: translateX(25.6px);
+    transform: translateX(25.6px);
     background-color: #000;
     border: none;
 }
@@ -112,50 +148,49 @@ input:checked + .slider:before {
 .quote-holder {
     display: grid;
     justify-content: center;
-    place-items: center;
-    grid-auto-flow: row;
+    grid-template-rows: 320px 100px;
     width: 500px;
     background-color: none;
     background: transparent;
-    /* background-color: rgb(211, 194, 194); */ /*Suits the dark mode aesthetic better*/
+    background-color: rgb(211, 194, 194);
     text-align: center;
     font-family: inherit;
-    /* box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px; */ /*Suits the dark mode aesthetic better*/
     padding: 0px 20px;
     border-radius: 70px;
 }
 
-#quote,
-#author {
-    display: grid;
-    justify-content: center;
-    width: inherit;
+.q-mark {
     margin: 0;
-    padding: 0;
 }
 
 .q-mark::before {
     content: '❝';
     font-size: 100px;
     width: 50px;
-    height: 130px;
+    height: 60px;
     display: block;
     position: relative;
-    right: 0px;
-    top: 25px;
+    right: 0;
+    top: 0;
+    margin-bottom: 40px;
 }
 
 .quote {
     display: block;
     font-size: 30px;
-    height: 300px;
+    /* height: 170px; */
+    width: inherit;
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .author {
     font-size: 20px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     font-weight: bold;
     color: rgb(0, 0, 128);
+    margin: 5px 0px 5px 0px;
+    text-align: center;
 }
 
 button {
@@ -168,7 +203,7 @@ button {
     color: rgb(240, 248, 255);
     background-color: rgb(0, 0, 0);
     cursor: pointer;
-    margin: 5% 0px 5% 60%;
+    margin: 2% 0 0 60%;
     outline: none;
     border-width: initial;
     border-style: none;
