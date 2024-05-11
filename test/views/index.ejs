@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="form.css">    
+    <link rel="stylesheet" href="heading.css">    
+</head>
+<body>
+    <div class="content-holder">
+        <div class="side-heading">
+            <h1>Log In</h1>
+            <p>Continue to site</p>
+        </div>
+        <form action="/login" method="post" class="form-content">
+            <div class="input-data">
+                <input type="email" name="email" required>
+                <label for="email">E-mail</label>
+            </div>
+            <div class="input-data">
+                <input type="password" name="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="next-btn">
+                <div class="create-acc">
+                    <a class="register-acc" href="/signup/email">Create account</a>
+                </div>
+                <button>Log In</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

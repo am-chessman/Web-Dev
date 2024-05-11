@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="public/body.css">
+    <link rel="stylesheet" href="public/form.css">    
+    <link rel="stylesheet" href="public/heading.css">
+    <link rel="stylesheet" href="public/age.css">    
+</head>
+<body>
+    <div class="content-holder">
+        <div class="side-heading">
+            <h1>Create Account</h1>
+            <p>Enter your birthday and gender</p>
+        </div>
+        <form action="/signup/password" method="post" class="form-content">
+            <div class="dob">
+                <div class="input-data">
+                    <input type="tel" name="year" maxlength="4" autocomplete="off" spellcheck="false" required>
+                    <label for="year">Year</label>
+                </div>
+                <div class="input-data">
+                    <select name="month" id="month">
+                        <option value=""></option>
+                        <option value="january">January</option>
+                        <option value="january">February</option>
+                        <option value="january">March</option>
+                        <option value="january">April</option>
+                        <option value="january">May</option>
+                        <option value="january">June</option>
+                        <option value="january">July</option>
+                        <option value="january">August</option>
+                        <option value="january">September</option>
+                        <option value="january">October</option>
+                        <option value="january">November</option>
+                        <option value="january">December</option>
+
+                    </select>
+                    <label for="month">Month</label>
+                </div>
+                <div class="input-data">
+                    <input type="tel" name="day" autocomplete="off" spellcheck="false" maxlength="2" required>
+                    <label for="day">Day</label>
+                </div> 
+            </div>
+            <div class="input-data">
+                <select name="gender" id="gender">
+                    <option value=""></option>
+                    <option value="opt">Male</option>
+                    <option value="opt">Female</option>
+                    <option value="opt">Rather not say</option>
+                    <option value="opt">Customised</option>
+                </select>
+                <label for="gender" class="gender-label">Gender</label>
+            </div> 
+            <div class="next-btn">
+                <button>Next</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

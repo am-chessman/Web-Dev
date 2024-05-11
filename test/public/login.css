@@ -6,12 +6,13 @@ body {
 
 .login-box {
     position: absolute;
-    top: 30%;
-    left: 40%;
-    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 550px;
+    height: auto;
     border-radius: 100px;
-    background: rgb(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-rows: 100px 300px;
     justify-content: center;
@@ -19,18 +20,23 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+
 .header {
    height: 10px; 
    color: #fff;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 50px;  
+   font-size: 30px;  
    text-align: center;
+}
+
+.header > h1 {
+   margin: 0px;
+
 }
 
 .form-content {
     display: grid;
     grid-template-rows: 100px 100px;
-    gap: 10px;
     justify-content: center;
 }
 
@@ -53,9 +59,10 @@ body {
 
 .submit-button {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .submit-button > button {
@@ -69,13 +76,32 @@ body {
     background-color: transparent;
     color: #fff;
     animation: infinite-loop 1s infinite;
+    user-select: none;
+
 }
-
-
 
 .submit-button > button:hover {
     cursor: pointer;
 }
+
+.register-acc {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #6f6fff;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all .1s ease-in-out;
+    user-select: none;
+}
+
+.register-acc:active,
+.register-acc:focus,
+.register-acc:valid{
+    color: darkgoldenrod;
+}
+
 
 .username-input label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -102,7 +128,8 @@ body {
 .input-data:valid ~ label {
     transform: translateY(-15px);
     color: #ffffff;
-    font-size: 15px;
+    font-size: 13px;
+    color: #6f6fff; 
 }
 
 .input-data:focus,
