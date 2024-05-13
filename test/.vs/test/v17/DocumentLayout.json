@@ -1,34 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\",
+  "WorkspaceRootPath": "C:\\Users\\markw\\OneDrive\\Skrivbord\\Web-dev\\test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\markw\\OneDrive\\Skrivbord\\Web-dev\\test\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\age.ejs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\age.ejs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\home.ejs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\home.ejs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\password.ejs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\password.ejs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\name.html||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\name.html||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\index.ejs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\index.ejs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\email.ejs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\email.ejs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\markw\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\login.ejs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\login.ejs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,87 +24,28 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "index.js",
-              "DocumentMoniker": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\index.js",
+              "DocumentMoniker": "C:\\Users\\markw\\OneDrive\\Skrivbord\\Web-dev\\test\\index.js",
               "RelativeDocumentMoniker": "index.js",
-              "ToolTip": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\index.js",
+              "ToolTip": "C:\\Users\\markw\\OneDrive\\Skrivbord\\Web-dev\\test\\index.js",
               "RelativeToolTip": "index.js",
-              "ViewState": "AQIAAAkAAAAAAAAAAAA1wBYAAAAAAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAQwCsAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-09T09:28:58.648Z",
+              "WhenOpened": "2024-05-12T09:36:53.186Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "home.ejs",
-              "DocumentMoniker": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\home.ejs",
-              "RelativeDocumentMoniker": "views\\home.ejs",
-              "ToolTip": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\home.ejs",
-              "RelativeToolTip": "views\\home.ejs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-11T14:58:09.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "name.html",
-              "DocumentMoniker": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\name.html",
-              "RelativeDocumentMoniker": "views\\name.html",
-              "ToolTip": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\name.html",
-              "RelativeToolTip": "views\\name.html",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-05-11T11:20:24.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "email.ejs",
-              "DocumentMoniker": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\email.ejs",
-              "RelativeDocumentMoniker": "views\\email.ejs",
-              "ToolTip": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\email.ejs",
-              "RelativeToolTip": "views\\email.ejs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-10T21:45:17.036Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "age.ejs",
-              "DocumentMoniker": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\age.ejs",
-              "RelativeDocumentMoniker": "views\\age.ejs",
-              "ToolTip": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\age.ejs",
-              "RelativeToolTip": "views\\age.ejs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAVAAAA",
+              "Title": "login.ejs",
+              "DocumentMoniker": "C:\\Users\\markw\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\login.ejs",
+              "RelativeDocumentMoniker": "views\\login.ejs",
+              "ToolTip": "C:\\Users\\markw\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\login.ejs",
+              "RelativeToolTip": "views\\login.ejs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAIwCUAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-11T08:21:02.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "password.ejs",
-              "DocumentMoniker": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\password.ejs",
-              "RelativeDocumentMoniker": "views\\password.ejs",
-              "ToolTip": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\password.ejs",
-              "RelativeToolTip": "views\\password.ejs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-11T07:31:39.898Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "index.ejs",
-              "DocumentMoniker": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\index.ejs",
-              "RelativeDocumentMoniker": "views\\index.ejs",
-              "ToolTip": "C:\\Users\\Mark Wabwire\\OneDrive\\Skrivbord\\Web-dev\\test\\views\\index.ejs",
-              "RelativeToolTip": "views\\index.ejs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAcAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-10T21:45:49.608Z"
+              "WhenOpened": "2024-05-10T21:45:49.608Z",
+              "IsPinned": true
             }
           ]
         }

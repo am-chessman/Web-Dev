@@ -33,7 +33,7 @@ body {
     gap: 15px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    text-wrap: wrap;
+    word-break: break-word;
     word-wrap: break-word;
 }
 
@@ -55,16 +55,15 @@ body {
     flex-direction: column;
 }
 
-.input-data > input,
-#gender-input {
+input {
     width: 350px;
     height: 55px;
     font-size: 17px;
     padding: 0px 15px 0px 15px;
     text-align: left;
     outline: none;
-    border: solid 1.5px black;
-    border-radius: 8px;
+    border: solid .5px #444746;
+    border-radius: 5px;
 }
 
 .input-data > label {
@@ -88,14 +87,14 @@ body {
 }
 
 input:focus,
-input:valid,
-input:invalid {
-    border: solid 1.5px #000fff;
+input:user-valid,
+input:user-invalid {
+    border: solid 1px #000fff;
 }
 
 input:focus + label,
 input:valid + label,
-input:invalid + label {
+input:user-invalid + label {
     margin-left: 10px;
     background-color: #fff !important;
     color: #000fff;
@@ -146,4 +145,18 @@ input:invalid + label {
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
+}
+
+/*Wrong password message styles*/
+
+.js-wrongPass, .js-wrongUser {
+    margin: 0;
+    position: absolute;
+    bottom: 75px;
+    font-family: var(--font-family);
+    color: red;
+}
+
+.js-wrongPass-none {
+    display: none;
 }

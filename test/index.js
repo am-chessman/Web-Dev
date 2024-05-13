@@ -11,7 +11,7 @@ const saltRounds = 10;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-//app.set("view engine", "ejs");
+app.set("view engine", "ejs");
 
 const db = new pg.Client({
     user: "postgres",
@@ -28,64 +28,68 @@ try {
 };
 
 app.get('/', (req, res) => {
-    res.render("index.ejs")
+    res.render("login.ejs")
 });
 
 app.post('/login', async (req, res) => {
-    const { email, password } = req.body;
-    
     try {
+        const { email, password } = req.body;
+        console.log(email)
+
         const checkCredential = await db.query('SELECT * FROM userinfo WHERE email = $1', [email]);
         const storedUser = checkCredential.rows[0];
 
-        if (checkCredential.rows.length > 0) {
-            const storedEmail = storedUser.email;
-            const storedPassword = storedUser.password;
-
-            if (email == storedEmail) {
-                if (password == storedPassword) {
-                    console.log("Logged In Successfully")
-                    res.render('name.ejs')
-                } else {
-                    const wrongPass = "You entered the wrong password";
-                    res.send(wrongPass)
-                }
-            }
+        if (!storedUser) {
+            res.render('login.ejs', {invalidUser: "User doesn't exist"})
         } else {
-            res.send("User doesn't exist")
-        }
+            bcrypt.compare(password, storedUser.password, (err, result) => {
+                if (err) {
+                    console.log(err)
+                } else {
+                    if (result) {
+                        res.redirect('/home')
+                    } else {
+                        res.render('login', {invalidPass: "Wrong password. Try again"})
+                    }
+                }
+            })
+        }        
     } catch (err) {
         if (err) console.log(err);
     }
 });
 
-app.get('/signup/email', (req, res) => {
-    res.render("email.ejs")
-});
-
-app.post('/signup/email', (req, res) => {
-    try {
-        const emailInput = req.body.email;
-        console.log(emailInput)
-    } catch (err) {
-        console.log()
-    }
-    console.log('YEEEEEES')
+app.get('/home', (req, res) => {
+    res.render('home.ejs')
 })
 
-app.post('/signup/age', (req, res) => {
-    res.render('age.ejs');
-    const ageInput = req.body.year +'-'+ req.body.month +'-'+ req.body.day
-    const genderInput = req.body.genderOpt
-});
+app.get('/signup', (req, res) => {
+    res.render('signup.ejs')
+})
 
-app.post('/signup/password', (req, res) => {
-    const passwordInput = req.body.newpass;
-    console.log(passwordInput)
-});
+app.post('/signup', async (req, res) => {
+    const { username, email, newpass, confpass, gender } = req.body;
 
-app.post('/home', (req, res) => {
-    res.render('home.ejs')
+    try {
+        if (newpass !== confpass) {
+            res.render('signup.ejs', { passNoMatch: "Info", passNoMatchAlert: "Passwords do not match"})
+            console.log('class created')
+            return;
+        } else {
+            await bcrypt.hash(newpass, saltRounds, async (err, hash) => {
+                if (err) {
+                    console.log(err)
+                } else {
+                    await db.query('INSERT INTO userinfo (username, email, password, gender) VALUES ($1, $2, $3, $4)', [username, email, hash, gender,]);
+                    console.log("Information sent and saved")
+                    res.redirect('/')
+                }
+            })
+        }
+    } catch (err) {
+        console.log(err)
+        res.status(500).send('Internal server error')
+    }
 })
 
 app.listen(port, () => {
