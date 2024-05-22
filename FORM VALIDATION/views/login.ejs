@@ -14,8 +14,8 @@
         </div>
         <form action="/login" method="post" class="form-content" enctype="application/x-www-form-urlencoded">
             <div class="input-data">
-                <input type="email" name="email" required>
-                <label for="email">E-mail</label>
+                <input type="text" name="email" required>
+                <label for="email">E-mail or Username</label>
                 <% if (locals.invalidUser) { %>
                     <p class="noUser"><%= invalidUser %></p>
                 <% } %>

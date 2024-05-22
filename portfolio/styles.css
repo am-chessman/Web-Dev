@@ -1,0 +1,131 @@
+:root {
+--body-background-color: #000;
+--nav-links-text-color: #fff;
+--nav-links-font-family: 'League Spartan', sans-serif;
+--main-text-font-family: 'Montserrat', sans-serif;
+--highlight-color: #ff3700;
+--form-border-color: #9f2200;
+}
+
+@font-face {
+    font-family: 'News Gothic', sans-serif;
+    src: url('./News-Gothic/News-Gothic.otf');
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-background-color);
+    display: flex;
+    justify-content: center;
+}
+
+.body-content {
+    width: 80%;
+    height: auto;
+}
+
+.mid-contaianer {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    justify-content: center;
+    margin-top: 50px;
+    padding-right: 100px;
+}
+
+.mid-contaianer > .image-object {
+    justify-self: center;
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.mid-contaianer > .info {
+    color: white;
+    font-family: var(--main-text-font-family);
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.description {
+    margin: 0;
+    font-size: 60px;
+    text-align: left;
+}   
+
+.proff {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+span {
+    color: var(--highlight-color);
+}
+
+.hire-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire-btn button {
+    width: 90px;
+    height: 30px;
+    margin: auto;
+    background-color: var(--highlight-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: var(--nav-links-font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+.hire-btn button:hover {
+    border: solid 2px var(--highlight-color);
+    background-color: transparent;
+    color: var(--highlight-color);
+}
+
+.socials-holder {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.socials {
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi {
+    font-size: 30px;
+    color: var(--highlight-color);
+    margin: auto;
+    transition: all .5s;
+}
+
+.bi:hover {
+    font-size: 35px;
+}
+
+svg {
+    width: 250px;
+}
+
+.skill:nth-child(3) > svg {
+    fill: var(--highlight-color);
+}
+

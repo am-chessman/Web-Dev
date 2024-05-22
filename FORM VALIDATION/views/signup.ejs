@@ -14,19 +14,19 @@
         </div>
         <form action="/signup" method="post" class="form-content">
             <div class="input-data">
-                <input type="text" name="username" required>
+                <input type="text" name="username" class="js-input" required>
                 <label for="username">Username</label>
             </div>
             <div class="input-data">
-                <input type="email" name="email" required>
+                <input type="email" name="email" class="js-input" required>
                 <label for="email">Email</label>
             </div>
             <div class="input-data">
-                <input type="password" name="newpass" required>
+                <input type="password" name="newpass" class="js-input" required>
                 <label for="newpass">Password</label>
             </div>
-            <div class="input-data <%= locals.isActive ? 'diffPass' : '' %> ">
-                <input type="password" name="confpass" required>
+            <div class="input-data">
+                <input type="password" name="confpass" class="js-input" required>
                 <label for="confpass">Confirm </label>
                 <% if (locals.passNoMatchAlert) { %>
                     <p class="pass-no-match"><%= passNoMatchAlert %></p>
@@ -47,5 +47,7 @@
             </div>
         </form>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
