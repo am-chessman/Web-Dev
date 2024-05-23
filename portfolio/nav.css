@@ -2,15 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: right;
-    justify-self: center;
-    gap: 50px;
+    gap: 4rem;
     width: 80%;
-    padding-top: 10px;
+    margin-right: 100px;
 }
 
 .nav-bar > .nav-links a {
     font-family: "League Spartan", sans-serif;
-    font-size: 21px;
+    font-size: 1.15rem;
     font-weight: 500;
     color: var(--nav-links-text-color);
     text-decoration: none;

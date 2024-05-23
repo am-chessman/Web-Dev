@@ -19,15 +19,9 @@ body {
     background-color: var(--body-background-color);
     display: grid;
     justify-content: center;
-    overflow-x: hidden;
 }
 
-.body-content {
-    display: grid;
-    justify-self: center;
-}
-
-.mid-contaianer {
+.mid-container {
     display: grid;
     grid-template-columns: repeat(2, 40%);
     justify-content: center;
@@ -35,7 +29,7 @@ body {
     padding-right: 100px;
 }
 
-.mid-contaianer > .image-object {
+.mid-container > .image-object {
     justify-self: center;
     width: 50vmin;
     height: 50vmin;
@@ -43,23 +37,25 @@ body {
     border-radius: 50%;
 }
 
-.mid-contaianer > .info {
+.mid-container > .info {
     color: white;
     font-family: var(--main-text-font-family);
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
+    width: 100%;
 }
 
 .description {
     margin: 0;
-    font-size: 60px;
+    font-size: 100%;
     text-align: left;
+    font-size: 4rem;
 }   
 
 .proff {
-    font-size: 40px;
+    font-size: 1.8rem;
     text-transform: uppercase;
     margin: 10px 0;
 }
@@ -120,10 +116,6 @@ span {
 
 .bi:hover {
     font-size: 35px;
-}
-
-svg {
-    width: 250px;
 }
 
 .skill:nth-child(3) > svg {

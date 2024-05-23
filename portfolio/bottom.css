@@ -4,14 +4,19 @@
     border-radius: 40px;
     padding-bottom: 300px;
     width: 80%;
+    display: grid;   
+    justify-self: center;
+    margin: 50px 0 0 0;
+    color: #fff;
+    font-family: var(--main-text-font-family); 
 }
 
 form {
     display: grid;
-    justify-content: center;
+    justify-content: space-between !important;
     grid-template-columns: repeat(2, 50%);
     margin-top: 25px;
-    padding: 0 20px 0 30px;
+    padding: 0 40px 0 30px;
 }
 
 .heading-text h1 {
@@ -26,19 +31,17 @@ form {
     color: #c2c2c2;
 }
 
-
 .interest-section > .btn-choices {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 50%;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .btn-choices button {
     height: 38px;
-    width: 40%;
-    font-size: 20px;
+                font-size: 20px;
     font-family: var(--nav-links-font-family);
     border: solid 1px var(--highlight-color);
     border-radius: 10px;

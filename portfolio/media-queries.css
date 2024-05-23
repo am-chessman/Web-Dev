@@ -1,0 +1,25 @@
+@media screen and (max-width: 400px) {
+    .mid-container,
+    .info,
+    .image-object {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .grid-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        display: grid;
+        justify-content: center;
+        grid-auto-flow: row;    
+    }
+
+}
