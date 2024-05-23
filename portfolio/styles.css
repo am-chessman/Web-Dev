@@ -17,17 +17,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--body-background-color);
-    display: flex;
+    display: grid;
     justify-content: center;
-    
+    overflow-x: hidden;
 }
 
 .body-content {
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
     display: grid;
-    justify-content: center;
+    justify-self: center;
 }
 
 .mid-contaianer {
@@ -40,8 +37,8 @@ body {
 
 .mid-contaianer > .image-object {
     justify-self: center;
-    width: 350px;
-    height: 350px;
+    width: 50vmin;
+    height: 50vmin;
     background-color: #fff;
     border-radius: 50%;
 }
