@@ -2,26 +2,28 @@
 .contact-section {
     display: grid;
     justify-content: center;   
-    margin: 50px 100px 0 0;
+    justify-self: center;
+    margin: 50px 0 0 0;
     color: #fff;
     font-family: var(--main-text-font-family); 
 }
 
 .grid-box {
+    width: 80%;
     display: grid;
-    grid-template-columns: repeat(2, 600px);
+    grid-template-columns: 50% 50%;
+    justify-self: center;
 }
 
 .about-me {
-    display: grid;
-    grid-template-rows: repeat(2, 350px);
+    width: 70%;
     margin: 0 50px 0 0;  
 }
 
 .about-me-content,
 .tech-list {
     font-family: var(--nav-links-font-family);
-    font-size: 26px;
+    font-size: 1.4rem;
     font-weight: 400;
     text-align: left;
     word-wrap: break-word;
@@ -29,7 +31,7 @@
 }
 
 .tech-list {
-    margin: 5px 0 30px 0;
+    margin: 5px 0 20px 0;
 }
 
 .about-header,
@@ -40,29 +42,30 @@
 
 .my-skills  {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: left;
     font-family: inherit;
-    margin-left: 50px;
+    /* padding-left: 40px; */
+    width: 100%;
 }
 
 .skill {
     background-color: #1d1d1d;
     border-radius: 8px;
     padding: 5px                ;
+    width:  100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
 }
 
 .skill svg {
-    width: 200px;
-    height: 80px;
+    height: 80%;
 }
 
 .skill-collection {
     display: grid;
-    grid-template-columns: minmax(45px, 100px) repeat(3, 100px);
-    column-gap: 50px;
-    row-gap: 20px;
+    grid-template-columns: repeat(4, 15%);
+    gap: 30px;
 }
 
 .skill {

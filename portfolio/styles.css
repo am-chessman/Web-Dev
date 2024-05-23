@@ -19,16 +19,20 @@ body {
     background-color: var(--body-background-color);
     display: flex;
     justify-content: center;
+    
 }
 
 .body-content {
-    width: 80%;
+    width: 100%;
     height: auto;
+    overflow-x: hidden;
+    display: grid;
+    justify-content: center;
 }
 
 .mid-contaianer {
     display: grid;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: repeat(2, 40%);
     justify-content: center;
     margin-top: 50px;
     padding-right: 100px;
