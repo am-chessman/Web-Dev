@@ -1,25 +1,127 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0;
+        /* display: grid;
+        justify-content: center; */
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 30px;
+        align-items: flex-start;
+        padding-left: 10px;
+        margin: 0;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .js-nav-bar {
+        display: contents;
+    }
+
     .mid-container,
-    .info,
-    .image-object {
+    .info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         justify-self: center;
-        align-items: center;
+        padding: 0 0 0 10px;
+    }
+
+    .info > .description {
+        font-size: 3em;
+    }
+
+    .info > .proff {
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0;
+        text-align: left;
     }
 
     .grid-box {
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        align-items: center;
+        justify-self: left;
+        padding: 0 0 0 20px;
+        width: 85%;
+    }
+
+    .my-skills {
+        width: 100%;
+    }
+
+    .my-skills > .skill-collection {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+        column-gap: 40px;
+    }
+
+    .grid-box > .about-me {
+        margin: 0;
+        width: 100%;
+        justify-content: left;
+    }
+
+    .contact-section {
+        width: 100%;
+        margin: auto;
+        border-radius: 0;
     }
 
     form {
-        display: grid;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        grid-auto-flow: row;    
+        align-items: center;
+        margin: auto;
+        padding: 0;
+    }
+
+    form > .left-container {
+        padding-bottom: 20px;
+    }
+
+    .heading-text h1,
+    .interest-text {
+        text-align: center;
+    }
+
+    .interest-section > .btn-choices {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .right-container {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .right-container > .input-section {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-section > .input-field {
+        width: 90%;
     }
 
 }

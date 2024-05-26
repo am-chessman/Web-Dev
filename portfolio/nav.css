@@ -7,6 +7,12 @@
     margin-right: 100px;
 }
 
+.menu-icon {
+    display: none;
+    color: var(--highlight-color);
+    font-size: 30px;
+}
+
 .nav-bar > .nav-links a {
     font-family: "League Spartan", sans-serif;
     font-size: 1.15rem;
