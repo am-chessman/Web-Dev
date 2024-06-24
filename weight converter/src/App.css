@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.content-holder {
+  background: rgb(255, 255, 255, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .3);  border-radius: 10px;
+  width: 100%;
+  padding: 2% 20%;
+  margin: auto;
+  text-align: left;
+  color: darkcyan;
+}
+
+.heading {
+  margin: 0 0 10% 0;
+}
+
+h1 {
+  text-align: left;
+}
+
+.input-field {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  align-items: center;
+}
+
+input {
+  width: 18rem;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+}

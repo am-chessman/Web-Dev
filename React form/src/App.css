@@ -1,0 +1,34 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+
+form {
+  margin: auto;
+  width: 35%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+}
+
+input {
+  height: 40px;
+  border-radius: 2px;
+  border: solid 1px #cdcdcd;
+  background-color: #4d6860;
+  padding: 0 10px;
+  font-family: inherit;
+  outline: none;
+  font-size: 1.15rem;
+  color: #fff;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+}

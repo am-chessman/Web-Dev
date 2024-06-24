@@ -1,0 +1,52 @@
+#root {
+  max-width: 1280px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.temperature-card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  width: 100%;
+  padding: 10%;
+  color: darkcyan;
+}
+
+h1 {
+  margin: 0 0 10% 0;
+  font-size: 2rem;
+}
+
+.input-fields {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  align-items: center;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+input {
+  width: 15rem;
+  height: 2rem;
+  padding: 0 5px;
+  outline: none;
+  border: solid 1px gray;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #006400;
+  font-size: 1.12rem;
+}
