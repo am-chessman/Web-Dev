@@ -20,10 +20,10 @@
     </style>
 </head>
 <body>
-    <div>
-        <% if (locals.apiData) { %>
-            <!-- <img src= alt="Image from NASA"> -->
-        <% } %>
+    <% if (locals.apiData) { %>
+        <div style="width: inherit; height: inherit; background-image: url(<%=apiData.url%>); background-position: center center; background-repeat: no-repeat;">
+        </div>
+    <% } %>
     </div>
 </body>
 </html>

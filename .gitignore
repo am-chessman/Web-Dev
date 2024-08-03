@@ -9,7 +9,9 @@ lerna-debug.log*
 .vscode/
 .idea/
 .vs/
+node_modules/
 .gitignore
+.git/
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json

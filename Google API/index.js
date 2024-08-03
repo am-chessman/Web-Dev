@@ -14,6 +14,7 @@ app.get("/", async(req, res) => {
     try {
         const response = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
         const responseData = response.data
+        // res.status(200).json(responseData)
         res.render("index.ejs", {apiData: responseData})
     } catch (error) {
         console.log("Error collecting data", error)
