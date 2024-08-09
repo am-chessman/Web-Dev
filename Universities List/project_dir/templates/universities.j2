@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universities</title>
+</head>
+<body>
+    {% if country %}
+        <h3>Universities in {{ country }}</h3>
+            <ul>
+        {% for data in university  %}
+            <li>{{ data }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <h1></h1>
+    {% endif %}
+</body>
+</html>

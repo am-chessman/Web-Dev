@@ -1,19 +1,16 @@
 FROM node:latest
 
+WORKDIR /app/
+
 COPY /package*.json /app/
+COPY /src /app/
 
-COPY /public/ /app/
-
-COPY /views /app/
-
-COPY /dotenv.env /app/
-
-COPY /index.js /app/
+RUN npm cache clean --force
+RUN rm -rf node_modules package-lock.json
 
 RUN npm i
-
 RUN npm i -g nodemon
 
-RUN nodemon index.js
+EXPOSE 3000
 
-CMD [ "node", "index.js" ]
+CMD [ "nodemon", "index.js" ]
