@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from django.http import JsonResponse
 import requests
 from .forms import CountryForm
 
@@ -34,3 +35,12 @@ def forms(request):
                     return HttpResponse(f"Error retrieving data from API: {e}")
             else:
                 return HttpResponse("Country does not exist")
+            
+def get_data(request):
+    flags_api = "https://flagcdn.com/en/codes.json"
+    try:
+        data = requests.get(flags_api)
+        print(type(data))
+        return JsonResponse(data.json())
+    except requests.exceptions.RequestException as e:
+        return HttpResponse(f"Error retrieving data from countries API: {e}")
