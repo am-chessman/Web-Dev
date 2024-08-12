@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Marlin soft", monospace;
+  src: url("./assets/fontmesa-marlinsoftbasic/FontMesa\ -\ MarlinSoftBasic-Regular.otf");
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #dcdcdc;
+}
+
+#root {
+  height: inherit;
+}
