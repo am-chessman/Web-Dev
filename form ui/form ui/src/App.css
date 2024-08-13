@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Marlin Soft Basic";
+    src: url("./assets/fontmesa-marlinsoftbasic/FontMesa-MarlinSoftBasic-Regular.otf");
+}
+
+.form-container {
+    height: inherit;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    place-items: center;
+    column-gap: 25px;
+    font-family: "Marlin Soft Basic";
+    position: relative;
+    
+
+    .form-1, 
+    .form-2 {
+        background-color: #fff;
+        border-radius: 20px;
+    
+        form {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            font-family: inherit;
+
+            h3 {
+                margin: 10px 0px 0px 0px;
+                font-size: 1.6rem;
+            }
+
+            p {
+                color: #747474;
+            }
+
+            .oauth-section {
+                .google-signin {
+                    margin-bottom: 15px;
+                }
+
+                .apple-signin > button > svg {
+                    font-size: 25px;
+                }
+                
+                .google-signin,
+                .apple-signin {
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 370px;
+                        text-align: center;
+                        height: 45px;
+                        border: solid .1px gray;
+                        background-color: #fff;
+                        gap: 10px;
+                        border-radius: 10px;
+                        outline: none;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .alt-text {
+                position: relative;
+                margin: 20px 0;
+                
+                .text-element {
+                    background-color: #fff;
+                    width: 30%;
+                    padding: 0 10px;
+                    position: absolute;
+                    left: 35%;
+                    
+                    p {
+                        margin: 0;
+                        color: #747474;
+                    }
+                }
+            }
+
+            .form-input-container {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    height: 45px;
+                    width: 350px;
+                    border: none;
+                    border-radius: 10px;
+                    font-family: "Marlin Soft Basic";
+                    font-size: 0.9rem;
+                    padding: 0 10px;
+                    outline: none;
+                    background-color: #dcdcdc;
+                }
+            }
+
+            .forgot-pass {
+                text-align: right;
+                padding: 20px 0;
+            
+                a {
+                    text-decoration: underline;
+                    color: #242424;
+                }
+            }
+
+            .signin-btn {
+                button {
+                    width: 100%;
+                    height: 45px;
+                    border-radius: 10px;
+                    border: none;
+                    outline: none;
+                    background-color: #000;
+                    color: #fff;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
