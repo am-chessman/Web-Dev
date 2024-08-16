@@ -1,0 +1,123 @@
+.menu-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Roboto conde", sans-serif;
+}
+
+.menu-item-1,
+.menu-item-2 {
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  width: 600px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu-content {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100%;
+  column-gap: 20px;
+
+  .image-section {
+    background-image: url("https://static.vecteezy.com/ti/foto-gratuito/p2/22815094-tradizionale-pizza-margherita-con-oliva-olio-italiano-fatti-in-casa-pizza-con-mozzarella-e-basilico-le-foglie-generativo-ai-foto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .description-section {
+    display: flex;
+    flex-direction: column;
+
+    .menu-item-header {
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 100px;
+
+      h2 {
+        margin: 8px 0;
+      }
+      
+      .price-item {
+        text-align: left;
+      }
+    }
+
+    .item-description {
+      width: 80%;
+
+      p {
+        margin: 10px 0;
+      }
+    }
+
+    .add-remove-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 20px;
+
+      .remove,
+      .add {
+        width: 30px;
+        height: 30px;
+        outline: none;
+        border: none;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+
+
+  }
+}
+
+.item-adder-section {
+  display: grid;
+  grid-template-columns: 100px 300px;
+  align-items: center;
+  text-align: right;
+  font-size: 25px;
+  position: relative;
+
+  .delete-btn > i {
+    color: #f70000;
+    cursor: pointer;
+  }
+
+  select {
+    height: 30px;
+    width: 55px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    appearance: none;
+    font-family: inherit;
+    padding-left: 10px;
+  }
+
+  .bi-caret-down-fill {
+    position: absolute;
+    left: 35px;
+    color: red;
+    font-size: 15px;
+    pointer-events: none;
+    color: #fff;
+  }
+}
+
+
