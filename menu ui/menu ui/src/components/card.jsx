@@ -81,7 +81,6 @@ return (
                             </option>
                             ))}
                         </select>
-                        <i className="bi bi-caret-down-fill"></i>
                         <div className="delete-btn">
                             <div className="delete-btn">
                                 <i className="bi bi-trash3"></i>
