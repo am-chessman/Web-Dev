@@ -38,7 +38,7 @@ export default function FoodCard() {
                         </div>
                         <div className="detail">
                             <div className="clock-icon">
-                                <i class="bi bi-clock"></i>
+                                <i className="bi bi-clock"></i>
                             </div>
                             <p>
                                 25 mins
@@ -48,7 +48,7 @@ export default function FoodCard() {
                 </div>
                 <div className="cart-button">
                     <button>
-                        <i class="bi bi-bag"></i>
+                        <i className="bi bi-bag"></i>
                         <span>Add to cart</span>
                     </button>
                 </div>
@@ -73,13 +73,13 @@ export default function FoodCard() {
                     </div>
                     <div className="review-section">
                         <span>4.5</span>
-                        <i class="bi bi-star-fill" style={{color: "#808080"}}></i>
+                        <i className="bi bi-star-fill" style={{color: "#808080"}}></i>
                         <span>·</span>
                         <h3>
                             25 mins
                         </h3>
                         <div className="clock-icon">
-                            <i class="bi bi-clock"></i>
+                            <i className="bi bi-clock"></i>
                         </div>        
                     </div>
                     <div className="meal-description-section">
@@ -90,7 +90,7 @@ export default function FoodCard() {
                 </div>
                 <div className="cart-button">
                     <button>
-                        <i class="bi bi-bag"></i>
+                        <i className="bi bi-bag"></i>
                         <span>Add to cart</span>
                     </button>
                 </div>
