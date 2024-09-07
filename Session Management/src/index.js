@@ -11,8 +11,8 @@ const port = 3000;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.set("view engine", "ejs");
 
 app.use(session({
     secret: "SECRETWORD",

@@ -1,0 +1,11 @@
+.main-content-container {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+
+
+    .details > .header > h1 {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+}
