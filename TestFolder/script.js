@@ -8,20 +8,16 @@ let startX, scrollLeft
 let firstChildPos = childElements[0].getBoundingClientRect().x
 
 function scrollToLeft() {
-    childElements.forEach(child => {
-        scrollElement.scrollBy({
-            left: - child.clientWidth + 10,
-            behavior: "auto"
-        })
+    scrollElement.scrollBy({
+        left: - childElements[0].clientWidth,
+        behavior: "auto"
     })
 }
 
 function scrollToRight() {
-    childElements.forEach(child => {
-        scrollElement.scrollBy({
-            left: + child.clientWidth - 10,
-            behavior: "auto"
-        })
+    scrollElement.scrollBy({
+        left: childElements[0].clientWidth,
+        behavior: "auto"
     })
 }
 
@@ -46,7 +42,7 @@ scrollElement.addEventListener("mousemove", (e) => {
     if (!isDragging) return
     e.preventDefault()
     const x = e.pageX - scrollElement.offsetLeft
-    const walk = (x - startX) * 3
+    const walk = (x - startX) * 2
     scrollElement.scrollLeft = scrollLeft - walk
 })
 

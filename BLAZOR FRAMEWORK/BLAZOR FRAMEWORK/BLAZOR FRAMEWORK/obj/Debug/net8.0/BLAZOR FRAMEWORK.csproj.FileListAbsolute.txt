@@ -1,0 +1,30 @@
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\bin\Debug\net8.0\appsettings.json
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\bin\Debug\net8.0\BLAZOR_FRAMEWORK.staticwebassets.runtime.json
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\bin\Debug\net8.0\BLAZOR_FRAMEWORK.exe
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\bin\Debug\net8.0\BLAZOR_FRAMEWORK.deps.json
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\bin\Debug\net8.0\BLAZOR_FRAMEWORK.runtimeconfig.json
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\bin\Debug\net8.0\BLAZOR_FRAMEWORK.dll
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\bin\Debug\net8.0\BLAZOR_FRAMEWORK.pdb
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\BLAZOR FRAMEWORK.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\BLAZOR FRAMEWORK.AssemblyInfoInputs.cache
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\BLAZOR FRAMEWORK.AssemblyInfo.cs
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\BLAZOR FRAMEWORK.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\BLAZOR_FRAMEWORK.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\BLAZOR FRAMEWORK.sourcelink.json
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\staticwebassets\msbuild.BLAZOR_FRAMEWORK.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\staticwebassets\msbuild.build.BLAZOR_FRAMEWORK.props
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BLAZOR_FRAMEWORK.props
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BLAZOR_FRAMEWORK.props
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\scopedcss\bundle\BLAZOR_FRAMEWORK.styles.css
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\scopedcss\projectbundle\BLAZOR_FRAMEWORK.bundle.scp.css
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\BLAZOR_FRAMEWORK.dll
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\refint\BLAZOR_FRAMEWORK.dll
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\BLAZOR_FRAMEWORK.pdb
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\BLAZOR FRAMEWORK.genruntimeconfig.cache
+C:\Users\Mark\Desktop\Web-Dev\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\BLAZOR FRAMEWORK\obj\Debug\net8.0\ref\BLAZOR_FRAMEWORK.dll
