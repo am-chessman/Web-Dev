@@ -27,6 +27,7 @@ export default function Body() {
                 <div className="copyright-section">
                     <span>&#169; Mark Wabwire {currentYear}</span>
                 </div>
+                <a href="https://avark.agency/typeterms" target="_blank"><img src="https://avark.agency/typeterms/press-kit/screenshots2.jpg" border="0" width="534" height="280" /></a><br /><span style="font-size: 12px;">Type Terms is the perfect tool for designers to learn the basics of typographic terminology. If you are new to typography or here to refresh your memory, then Type Terms is perfect for you. (via <a href="https://avark.agency">avark.agency</a>).</span>
             </div>
         </>
     )
