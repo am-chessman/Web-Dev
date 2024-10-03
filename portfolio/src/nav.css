@@ -1,0 +1,25 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-bar > h1 {
+    font-size: 1.58rem;
+    letter-spacing: 1.1px;
+}
+
+.right-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+
+    .link > a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: inherit;
+    }
+}

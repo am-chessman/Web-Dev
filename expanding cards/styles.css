@@ -1,0 +1,57 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    place-items: center;
+    column-gap: 30px;
+}
+
+.image-object {
+    height: 500px;
+    width: 80px;
+    border-radius: 100px;
+}
+
+.image-object:nth-child(1) {
+    width: 700px;
+    background-image: url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.image-object:nth-child(2) {
+    background-image: url('https://images.pexels.com/photos/2422915/pexels-photo-2422915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.image-object:nth-child(3) {
+    background-image: url('https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.image-object:nth-child(4) {
+    background-image: url("https://images.pexels.com/photos/454880/pexels-photo-454880.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.image-object:nth-child(5) {
+    background-image: url('https://images.pexels.com/photos/40896/larch-conifer-cone-branch-tree-40896.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+

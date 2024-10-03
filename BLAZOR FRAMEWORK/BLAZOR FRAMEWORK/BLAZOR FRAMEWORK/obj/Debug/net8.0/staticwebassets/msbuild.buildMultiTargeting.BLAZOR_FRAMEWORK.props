@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BLAZOR_FRAMEWORK.props" />
+</Project>

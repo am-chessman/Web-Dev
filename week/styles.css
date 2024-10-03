@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #90c0de;
+}
+
+.main-body {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.week-number {
+    font-family: 'Arial', serif;
+    font-size: 260px;
+    text-align: center;
+    color: #1c7bb7;
+    font-weight: bold;
+    line-height: 227px;
+}

@@ -1,0 +1,168 @@
+.card-1,
+.card-2 {
+  width: 330px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10px;  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 23px;
+}
+
+.card-1 > .image-section,
+.card-2 > .image-section {
+  background-image: url("https://www.foodandwine.com/thmb/IkRgTD5TlTZX9cxcgsPiK5ZlItw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chilaquiles-rojos-FT-RECIPE0420-1-40a700fc949d4f9d8d87e66722c5923f.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  padding: 10px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-1 > .details-section{
+  padding: 20px;
+  background-color: #f3f3f3;
+}
+
+
+.description-section {
+  padding: 20px;
+}
+
+.header-element-section {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.meal-name-section > h3 { 
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 28px;
+  letter-spacing: 0.01rem;  
+} 
+
+.meal-description-section > p {
+  margin: 15px 0;
+  font-size: 1.2rem;  
+  font-weight: 320;
+}
+
+.price-and-delivery-section {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  column-gap: 20px;
+}
+
+.price-object,
+.delivery-object {
+  background-color: #fff;
+  border-radius: 15px;
+  
+  .object-title {
+    margin: 0 10px;
+    
+    p {
+      font-size: 0.8rem;
+      color: #808080;
+      margin: 8px 0 0 0;
+      zoom: 1.2;
+    }
+  }
+  
+  .detail {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+    i{
+      font-weight: bold;
+    }
+    
+    p {
+      font-weight: bold;
+    }
+  }
+  
+  p {
+    margin: 8px 0;
+  }
+}
+
+.cart-button {
+  margin-top: 20px;
+  text-align: center;
+  
+  button {
+    height: 45px;
+    border: none;
+    background-color: #01c201;
+    font-family: inherit;
+    font-size: 1rem;
+    padding-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  span {
+    margin: 10px;
+  }
+  
+  i {
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 5px;
+  }
+}
+
+.card-2 {
+  margin-left: 30px;  
+  width: 400px;
+  
+  .header-element-section {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    column-gap: 30px;
+
+    .meal-name-section > h3 {
+      text-align: left;
+    }
+  
+    .price-item > p {
+      text-align: right;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+
+  .details-section {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .review-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+    h3, i {
+      font-weight: 400;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  }
+
+  .cart-button {
+    margin: 0 0 20px 0;
+
+    button {
+      width: 90%;
+    }
+  }
+}

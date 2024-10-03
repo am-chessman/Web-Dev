@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  
+  .content-holder {
+    display: grid;
+    grid-template-columns: repeat(20, minmax(100px, auto));
+    column-gap: 15px;
+    scroll-behavior: smooth;
+    overflow: auto;
+  }
+}
+
+.child {
+  background-color: black;
+  height: 150px;
+}

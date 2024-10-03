@@ -1,0 +1,42 @@
+.nav-bar {
+  padding: 1% 15%;
+
+  .nav-content {
+    font-size: 1.8rem;
+  }
+}
+
+.main-content {
+  margin: 6% 15%;
+  font-size: 2rem;
+
+  .name-section {
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .socials-section {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    a {
+      text-decoration: none;
+
+      .bi {
+        font-size: 1.5rem;
+        color: #000;
+      }
+    }
+  }
+
+  .copyright-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    font-size: 1rem;
+    text-align: center;
+  } 
+}

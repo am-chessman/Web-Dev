@@ -7,6 +7,7 @@ const port = 3000;
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Get route
 app.get("/", (req, res) => {
   res.render("solution.ejs");
 });

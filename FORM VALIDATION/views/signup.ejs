@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="signup.css"> 
+</head>
+<body>
+    <div class="content-holder">
+        <div class="side-heading">
+            <h1>Create Account</h1>
+            <p>Enter your information</p>
+        </div>
+        <form action="/signup" method="post" class="form-content">
+            <div class="input-data">
+                <input type="text" name="username" class="js-input" required>
+                <label for="username">Username</label>
+            </div>
+            <div class="input-data">
+                <input type="email" name="email" class="js-input" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-data">
+                <input type="password" name="newpass" class="js-input" required>
+                <label for="newpass">Password</label>
+            </div>
+            <div class="input-data">
+                <input type="password" name="confpass" class="js-input" required>
+                <label for="confpass">Confirm </label>
+                <% if (locals.passNoMatchAlert) { %>
+                    <p class="pass-no-match"><%= passNoMatchAlert %></p>
+                <% } %>
+            </div>
+            <div class="input-data">
+                <select name="gender" id="gender-input">
+                    <option value=""></option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="non-binary">Rather not say</option>
+                    <option value="custom">Customized</option>
+                </select>                  
+                <label for="gender" class="gender-label">Gender</label>
+            </div> 
+            <div class="next-btn">
+                <button>Next</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
