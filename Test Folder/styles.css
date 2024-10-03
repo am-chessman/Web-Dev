@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+details {
+    border: solid 2px red;
+    width: 30%;
+    height: 40px;
+    padding: 10px;
+}
