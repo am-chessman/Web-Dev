@@ -1,6 +1,6 @@
-<x-home-link />
-<x-about-link />
-<x-contact-link>
-    <h1>Hello from the Contact page</h1>
-</x-contact-link>
-    
+<x-layout>
+    <x-slot:heading>
+        Contact Page
+    </x-slot:heading>
+    Hello from the Contact page
+</x-layout>
