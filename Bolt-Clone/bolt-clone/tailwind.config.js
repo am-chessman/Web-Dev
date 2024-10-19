@@ -10,7 +10,15 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customgray: "#161616",
+        logocolor: "#34d186",
+        lightgray: "#e3e0de",
+        btnhover: "#d3d4d7",
+        footertxt: "#888a92"
       },
+      fontFamily: {
+        galano: ['GalanoClassic', 'san-serif'],
+      }
     },
   },
   plugins: [],

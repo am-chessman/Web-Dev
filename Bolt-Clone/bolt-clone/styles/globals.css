@@ -2,4 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "sans";
+    src: url("../public/fonts/euclid-circular-b/EuclidCircularBRegular.ttf");
+}
 
+@font-face {
+    font-family: 'GalanoClassic';
+    src: url("../public/fonts/galano-classic-alt/GalanoClassicAltRegular.otf") format("opentype");
+};
