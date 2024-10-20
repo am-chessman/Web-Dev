@@ -1,30 +1,23 @@
 const LanguageRow = ({countryISO, countryFlag, countryName, localName, commonName, lang}) => {
     return (
-        <div>
-            <div className="grid grid-flow-col">
-                <div className="grid grid-flow-col">
+        <>
+            <div className="grid grid-flow-col justify-start">
+                <div className="flex flex-row gap-6">
                     <div title={countryISO}>
-                        <img src={countryFlag} alt={countryName} width={"28px"} />
+                        <img src={countryFlag} alt={countryName} width={"24px"} />
                     </div>
-                    <div>
-                        <div>
+                    <div className="grid justify-start">
+                        <div className="text-sm text-wrap text-left">
                             {localName}
                         </div>
-                        <div>
+                        <div className="text-footertxt text-xs">
                             {commonName}
                         </div>
                     </div>
                 </div>
-
-                <div>Tick</div>
-
-                <div>
-                    {lang}
-                </div>
             </div>
-        </div>
+        </>
     )
 }
-
 
 export default LanguageRow

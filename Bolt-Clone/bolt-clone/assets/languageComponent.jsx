@@ -12,8 +12,8 @@ const countryComponentList = [
         iso: "",
         country: "Global",
         englishName: "Global",
-        flag: "https://hatscripts.github.io/circle-flags/flags/br.svg",
-        languages: ["English"]
+        languages: ["English"],
+        flag: "images/global-svg.svg"
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const countryComponentList = [
         country: "Angola",
         englishName: "Angola",
         flag: "https://hatscripts.github.io/circle-flags/flags/ao.svg",
-        languages: ["Português, English"]
+        languages: ["Português", "English"]
     },    
     {
         id: 4,
@@ -221,7 +221,7 @@ const countryComponentList = [
         country: "Moçambique",
         englishName: "Mozambique",
         flag: "https://hatscripts.github.io/circle-flags/flags/mz.svg",
-        languages: ["Português, English"]
+        languages: ["Português", "English"]
     },    
     {
         id: 29,
@@ -548,7 +548,8 @@ const countryComponentList = [
         iso: "ae",
         country: "United Arab Emirates",
         englishName: "United Arab Emirates",
-        flag: "https://hatscripts.github.io/circle-flags/flags/ae.svg"
+        flag: "https://hatscripts.github.io/circle-flags/flags/ae.svg",
+        languages: ["العربية", "English"]
     }
 ]
 
