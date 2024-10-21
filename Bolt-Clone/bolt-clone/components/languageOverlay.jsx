@@ -2,7 +2,7 @@
 
 import LanguageRow from "./languageElement"
 import countryComponentList from "@assets/languageComponent"
-import { useState } from "react";
+import { useState, useReft } from "react";
 
 const LanguageItem = ({lang}) => {
     return (
@@ -30,11 +30,8 @@ const LanguageOverlay = () => {
     }
 
     return (
-        <div className="absolute w-[600px] border-solid border-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-2xl font-galano overlay">
+        <div className="absolute w-[600px] border-solid border-black top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-2xl font-galano">
             <div className="bg-white grid grid-flow-row gap-10 relative justify-center p-10 h-[580px] rounded-2xl">
-                <div className="absolute right-[30px] top-4 closeOverlay">
-                    <i className="bi bi-x-lg text-lg font-bold cursor-pointer"></i>
-                </div>
                 <div className="relative flex justify-center">
                     <div className="relative]">
                         <i className="bi bi-search text-xl absolute top-3 left-[75px] font-bold"></i>
