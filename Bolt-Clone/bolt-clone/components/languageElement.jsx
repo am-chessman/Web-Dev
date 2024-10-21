@@ -15,6 +15,9 @@ const LanguageRow = ({countryISO, countryFlag, countryName, localName, commonNam
                         </div>
                     </div>
                 </div>
+                <div className="flex flex-row items-end">
+                    {lang}
+                </div>
             </div>
         </>
     )
