@@ -1,3 +1,4 @@
+"use client"
 
 import LanguageOverlay from "./languageOverlay"
 
@@ -27,7 +28,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        {/* <div className="">
+                        <div className="">
                             <div className="text-customgray text-lg pb-6 font-bold">Bolt</div>
                             <div className="grid gap-4">
                                 <div ><a href="/" className="hover:text-logocolor">Resor</a></div>
@@ -115,12 +116,14 @@ const Footer = () => {
                                     <a href="/security" className="hover:text-logocolor">Säkerhet</a>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </footer>
 
-            <LanguageOverlay />
+            <div className="overlay hidden absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50">
+                <LanguageOverlay />
+            </div> 
         </>
     )
 }

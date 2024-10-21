@@ -285,7 +285,7 @@ const countryComponentList = [
         country: "Portugal",
         englishName: "Portugal",
         flag: "https://hatscripts.github.io/circle-flags/flags/pt.svg",
-        languages: ["Português, English"]
+        languages: ["Português", "English"]
     },       
     {
         id: 37,

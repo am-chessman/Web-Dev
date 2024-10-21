@@ -1,4 +1,9 @@
+"use client"
+
+import LanguageOverlay from "./languageOverlay"
+
 const NavigationBar = () => {
+
     return (
         <>
             <nav className="bg-black">
@@ -36,6 +41,10 @@ const NavigationBar = () => {
                     </div>
                 </div>
             </nav>
+        
+            <div className="overlay hidden absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50">
+                <LanguageOverlay />
+            </div>        
         </>
     )
 }
