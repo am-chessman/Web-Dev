@@ -4,7 +4,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "daily"
       timezone: "Europe/Stockholm"
     labels:
       - "npm dependencies"
