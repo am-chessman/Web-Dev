@@ -21,7 +21,7 @@ export default function Header() {
     }
 
     console.log(filteredCountries)
-
+// 
     function handleFormSubmit(event) {
         event.preventDefault();
     }

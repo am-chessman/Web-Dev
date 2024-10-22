@@ -1,7 +1,7 @@
 export default function Card() {
     return (
         <div className="form-container">
-            <div className="form-1">
+            {/* <div className="form-1">
                 <form action="#" method="post">
                 <div className="welcome-text">
                     <h3>Welcome Back!</h3>
@@ -43,7 +43,7 @@ export default function Card() {
                     </button>
                 </div>
                 </form>
-            </div>
+            </div> */}
 
             <div className="form-2">
                 <form action="#" method="post">
