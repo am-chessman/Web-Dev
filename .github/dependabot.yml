@@ -33,6 +33,6 @@ updates:
     labels:
       - "pip dependencies"
     commit-message: 
-      prefix: "pip"
-    rebase-strategy: "auto"
+      prefix: "pip"     # Moved the prefix inside commit-message
+    rebase-strategy: "auto"  # Corrected value for rebase-strategy
     automerge: true
