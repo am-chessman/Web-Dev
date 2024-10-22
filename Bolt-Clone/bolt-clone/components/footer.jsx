@@ -1,9 +1,48 @@
+"use client"
 
+import { useEffect, useRef } from "react"
 import LanguageOverlay from "./languageOverlay"
 
 const Footer = () => {
 
     let currentDate = new Date().getFullYear()
+
+    const langOverlayRef = useRef(null)
+    const showOverlay = useRef(null)
+    const removeOverlayRef = useRef(null)
+
+    useEffect(() => {
+        const button = showOverlay.current
+        const overlayRef = langOverlayRef.current
+        const removeOverlay = removeOverlayRef.current
+
+        function displayOverlay() {
+            if (overlayRef.classList.contains("hidden")) {
+                overlayRef.classList.remove("hidden")
+            }
+        }
+
+        function hideOverlay() {
+            if (!overlayRef.classList.contains("hidden")) {
+                overlayRef.classList.add("hidden")
+            }
+        }
+
+        if (button) {
+            button.addEventListener("click", displayOverlay)
+        }
+
+        if (removeOverlay) {
+            removeOverlay.addEventListener("click", hideOverlay)
+        }
+
+        return () => {
+            if (button && removeOverlay) {
+                button.removeEventListener("click", displayOverlay)
+                removeOverlay.addEventListener("click", hideOverlay)
+            }
+        }
+    }, [])
 
     return (
         <>
@@ -15,7 +54,7 @@ const Footer = () => {
                                 <img src="images/bolt-logo.webp" alt="Bolt logo" width={"69px"} height={"40px"} />
                             </div>
                             <div className="flex flex-row justify-center items-center gap-10 font-GalanoClassic">
-                                <div>
+                                <div ref={showOverlay}>
                                     <button className="flex items-center justify-center text-gray-600 gap-2">
                                         <div className="border-none">
                                             <img src="images/flag-for-sweden.svg" alt="" width={"28px"}/>
@@ -27,7 +66,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        {/* <div className="">
+                        <div className="">
                             <div className="text-customgray text-lg pb-6 font-bold">Bolt</div>
                             <div className="grid gap-4">
                                 <div ><a href="/" className="hover:text-logocolor">Resor</a></div>
@@ -115,12 +154,17 @@ const Footer = () => {
                                     <a href="/security" className="hover:text-logocolor">Säkerhet</a>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </footer>
-
-            <LanguageOverlay />
+            
+            <div ref={langOverlayRef} className="overflow-hidden hidden absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50">
+                <LanguageOverlay />
+                <div className="absolute right-[30px] top-[10%] left-[69%]" ref={removeOverlayRef}>
+                    <i className="bi bi-x-lg text-lg font-bold cursor-pointer"></i>
+                </div>
+            </div> 
         </>
     )
 }

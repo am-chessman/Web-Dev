@@ -1,4 +1,9 @@
+"use client"
+
+import ExtendedMenu from "./extendedMenu"
+
 const NavigationBar = () => {
+
     return (
         <>
             <nav className="bg-black">
