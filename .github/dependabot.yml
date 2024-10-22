@@ -25,15 +25,15 @@ updates:
       prefix: "npm"
 
   - package-ecosystem: "pip"
-  directory: "/"
-  schedule:
+    directory: "/"
+    schedule:
     interval: "weekly"
     day: "Thursday"
     timezone: "Europe/Stockholm"
     time: "8:00"
-  labels:
+    labels:
     - "pip dependencies"
-  commit-message: 
+    commit-message: 
     prefix: "pip"
     
     rebase-strategy: "enabled"
