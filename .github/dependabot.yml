@@ -1,5 +1,6 @@
 version: 2
-updates: 
+updates:
+  # npm dependencies
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -9,7 +10,9 @@ updates:
       - "npm dependencies"
     commit-message: 
       prefix: "npm"
-  
+    automerge: true
+
+  # composer dependencies
   - package-ecosystem: "composer"
     directory: "/"
     schedule:
@@ -18,16 +21,18 @@ updates:
     labels:
       - "composer dependencies"
     commit-message: 
-      prefix: "npm"
+      prefix: "composer"
+    automerge: true
 
+  # pip dependencies
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "daily"
       timezone: "Europe/Stockholm"
     labels:
-    - "pip dependencies"
+      - "pip dependencies"
     commit-message: 
-    prefix: "pip"
-    
-    rebase-strategy: "enabled"
+      prefix: "pip"
+    rebase-strategy: "auto"
+    automerge: true
