@@ -1,0 +1,35 @@
+version: 2
+updates:
+  # npm dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      timezone: "Europe/Stockholm"
+    labels:
+      - "npm dependencies"
+    commit-message: 
+      prefix: "npm"
+
+  # composer dependencies
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      timezone: "Europe/Stockholm"
+    labels:
+      - "composer dependencies"
+    commit-message: 
+      prefix: "composer"
+
+  # pip dependencies
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      timezone: "Europe/Stockholm"
+    labels:
+      - "pip dependencies"
+    commit-message: 
+      prefix: "pip"
+    rebase-strategy: "auto"
