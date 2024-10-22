@@ -23,8 +23,8 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-    interval: "daily"
-    timezone: "Europe/Stockholm"
+      interval: "daily"
+      timezone: "Europe/Stockholm"
     labels:
     - "pip dependencies"
     commit-message: 
