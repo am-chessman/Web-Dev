@@ -8,6 +8,7 @@ import { Strategy as GoogleStrategy } from "passport-google-oauth20"
 import { Strategy as LocalStrategy } from "passport-local"
 import passport from "passport"
 import bcrypt from "bcrypt"
+import { Strategy } from "passport-oauth2"
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -28,6 +29,12 @@ app.use(session({
 }))
 app.use(passport.initialize())
 app.use(passport.session())
+
+//Validate Login in
+passport.use(new LocalStrategy(
+    function(username, password, done) {
+        User.findOne({})
+}))
 
 passport.serializeUser((user, cb) => {
     process.nextTick(() => {
