@@ -19,11 +19,8 @@
         background-color: #fff;
         border-radius: 20px;
     
-        form {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            font-family: inherit;
+        .header-section {
+            padding-left: 20px;
 
             h3 {
                 margin: 10px 0px 0px 0px;
@@ -33,34 +30,41 @@
             p {
                 color: #747474;
             }
+        }
 
-            .oauth-section {
-                .google-signin {
-                    margin-bottom: 15px;
-                }
+        .oauth-section {
+            .google-signin {
+                margin-bottom: 15px;
+            }
 
-                .apple-signin > button > svg {
-                    font-size: 25px;
-                }
-                
-                .google-signin,
-                .apple-signin {
-                    button {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 370px;
-                        text-align: center;
-                        height: 45px;
-                        border: solid .1px gray;
-                        background-color: #fff;
-                        gap: 10px;
-                        border-radius: 10px;
-                        outline: none;
-                        font-size: 1rem;
-                    }
+            .apple-signin > button > svg {
+                font-size: 25px;
+            }
+            
+            .google-signin,
+            .apple-signin {
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 370px;
+                    text-align: center;
+                    height: 45px;
+                    border: solid .1px gray;
+                    background-color: #fff;
+                    gap: 10px;
+                    border-radius: 10px;
+                    outline: none;
+                    font-size: 1rem;
                 }
             }
+        }
+
+        form {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            font-family: inherit;
 
             .alt-text {
                 position: relative;
