@@ -38,3 +38,4 @@ automerge:
   enabled: true
   commit-message:
     prefix: "automerge"
+    
