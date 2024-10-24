@@ -10,8 +10,6 @@ updates:
       - "npm dependencies"
     commit-message: 
       prefix: "npm"
-    automerge: true
-
 
   # composer dependencies
   - package-ecosystem: "composer"
@@ -35,4 +33,8 @@ updates:
     commit-message: 
       prefix: "pip"
     rebase-strategy: "auto"
-    automerge: true
+
+automerge: 
+  enabled: true
+  commit-message:
+    prefix: "automerge"
