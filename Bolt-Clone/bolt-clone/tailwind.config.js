@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         galano: ['GalanoClassic', 'san-serif'],
+        euclid: ['EuclidCircular'],
       }
     },
   },

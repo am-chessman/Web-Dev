@@ -41,6 +41,9 @@ const NavigationBar = () => {
                     </div>
                 </div>
             </nav>
+            <div className="flex justify-center items-center mt-10">
+                <ExtendedMenu />
+            </div>
         </>
     )
 }

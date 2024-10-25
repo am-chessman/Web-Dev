@@ -2,25 +2,11 @@ const Cities = () => {
     return (
         <>
             <div>
-                {/* <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div> */}
                 <div>
-                    <div>
-                        <div>
-                            <div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                        </div>
-                    </div>
+                    <div>Städer</div>
+                    <div>Flygplatser</div>
+                    <div>Stadslösningar</div>
+                    <div>Bolt laddstationer</div>
                 </div>
             </div>
         </>

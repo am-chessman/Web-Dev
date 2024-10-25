@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "sans";
+    font-family: "EuclidCircular";
     src: url("../public/fonts/euclid-circular-b/EuclidCircularBRegular.ttf");
 }
 
