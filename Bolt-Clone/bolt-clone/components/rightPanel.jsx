@@ -1,7 +1,7 @@
 const RightPanel = () => {
     return (
         <>
-            <div>
+            <div className="bg-green-400 p-4 h-full">
                 <div>
                     <div>
                         <div>
