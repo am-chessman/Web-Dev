@@ -9,10 +9,10 @@ import RightPanel from "./rightPanel"
 const ExtendedMenu = () => {
     return (
         <>
-            <div className="h-full">
-                <div className="mr-16 ml-20 overflow-hidden">
-                    <div className="bg-red-500 flex flex-row justify-center gap-4 font-euclid h-[700px] overflow-y-scroll">  
-                        <div className="bg-blue-500 pr-20 border-none rounded-2xl w-[95%] min-h-fit">
+            <div className="overflow-y-scroll mr-16">
+                <div className="ml-20 bg-orange-400 h-[500px]">
+                    <div className="bg-red-500 flex flex-row gap-4 font-euclid pb-20">
+                        <div className="bg-blue-500 pr-20 border-none rounded-2xl h-fit">
                             <div className="pl-4">
                                 <div className="flex flex-row justify-between gap-10 text-center font-euclid p-4">
                                     <div className="justify-center items-center p-2 text-[15px] font-bold hover:bg-white hover:cursor-pointer hover:border-none hover:rounded-md">Produkter</div>
@@ -42,14 +42,14 @@ const ExtendedMenu = () => {
                                         <Cities />
                                     </div> */}
                                 </div>
-                            </div>                    
+                            </div>
                         </div>
-                        <div className="mr-4">
+                        <div className="mr-4 h-auto">
                             <RightPanel />
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
         </>
     )
 }

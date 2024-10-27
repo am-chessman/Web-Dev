@@ -4,7 +4,7 @@ import Footer from "@components/footer";
 
 export const metadata = {
   title: "Bolt Clone",
-  description: "A clone of the bolt Wesbiste",
+  description: "A clone of the Bolt Website",
 };
 
 export default function RootLayout({ children }) {
