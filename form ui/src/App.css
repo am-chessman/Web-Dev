@@ -37,12 +37,12 @@
                 margin-bottom: 15px;
             }
 
-            .apple-signin > button > svg {
+            .github-signin > button > svg {
                 font-size: 25px;
             }
             
             .google-signin,
-            .apple-signin {
+            .github-signin {
                 button {
                     display: flex;
                     justify-content: center;

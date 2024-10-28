@@ -21,7 +21,7 @@ const Items = ({itemsElement}) => {
 const Products = () => {
     return (
         <>
-            <div className="grid grid-flow-row gap-7">
+            <div className="grid grid-flow-row w-[95%]">
                 <div className="grid grid-cols-3 gap-y-10">
                     {productsData.map((element, index) => (
                         <ProdViewContent key={index} title={element.title} item={element.items.map((items, index) => (
