@@ -1,38 +1,33 @@
+import {businessData} from "./extendedMenuData"
+import BusinessViewContent from "@components/businessViewContent";
+
+const Items = ({itemsElement}) => {
+    return (
+        <>
+            <div className="flex justify-between items-center p-2 cursor-pointer group hover hover:bg-gray-600 hover:rounded-lg">
+                <div className="w-[140px] group-hover:font-bold transition-all">
+                    {itemsElement}
+                </div>
+                {/* <div className="ml-2"> */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right opacity-0 group-hover:opacity-100 transition-opacity duration-200" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+                {/* </div> */}
+            </div>
+        </>
+    )
+}
+
 const Business = () => {
     return (
         <>
-            <div>
-                <div>
-                    <div>Jobba hos oss</div>
-                    <div>Jobb</div>
-                    <div>Livet på Bolt</div>
-                    <div>Team</div>
-                    <div>Platser</div>
-                    <div>Diversity and Inclusion</div>
-                </div>
-                <div>
-                    <div>Press</div>
-                    <div>Riktlinjer för varumärket</div>
-                </div>
-                <div>
-                    <div>Om Bolt</div>
-                    <div>Sustainability at Bolt</div>
-                    <div>Project Zero</div>
-                    <div>Bolts miljöpolicy</div>
-                    <div>Bolts uppdrag</div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>Blogg</div>
-                    <div>Nyheter</div>
-                    <div>Kampanjer</div>
-                    <div>För passegerare</div>
-                    <div>För förare</div>
-                    <div>För kurirer</div>
-                    <div>Bolt Business</div>
-                    <div>Bolt Food</div>
-                    <div>Bold Drive</div>
+            <div className="grid grid-flow-row w-[95%]">
+                <div className="grid grid-cols-3 gap-y-10">
+                    {businessData.map((element, index) => (
+                        <BusinessViewContent key={index} title={element.title} item={element.items.map((items, index) => (
+                            <Items itemsElement={items} key={index} />
+                        ))}/>
+                    ))}
                 </div>
             </div>
         </>

@@ -76,7 +76,7 @@ const NavigationBar = () => {
                     </div>
                 </div>
             </nav>
-            <div className="flex justify-center items-center absolute translate-y-[-104%] bg-orange-400 w-full h-full -z-10" ref={extendedMenuRef}>
+            <div className="flex justify-center items-center absolute translate-y-[-104%] w-full h-[780px] -z-10" ref={extendedMenuRef}>
                 <ExtendedMenu />
             </div>
         </>

@@ -14,7 +14,8 @@ module.exports = {
         logocolor: "#34d186",
         lightgray: "#e3e0de",
         btnhover: "#d3d4d7",
-        footertxt: "#888a92"
+        footertxt: "#888a92",
+        extendedmenu: "#e3e5e7",
       },
       fontFamily: {
         galano: ['GalanoClassic', 'san-serif'],

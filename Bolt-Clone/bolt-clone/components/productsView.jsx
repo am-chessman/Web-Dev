@@ -1,4 +1,4 @@
-import productsData from "./extendedMenuElements"
+import productsData from "./extendedMenuData"
 import ProdViewContent from "./productsViewContent"
 
 const Items = ({itemsElement}) => {
