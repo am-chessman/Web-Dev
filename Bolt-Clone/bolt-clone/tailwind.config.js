@@ -16,7 +16,14 @@ module.exports = {
         btnhover: "#d3d4d7",
         footertxt: "#888a92",
         extendedmenu: "#e3e5e7",
+        darkgradient: "#090909",
+        midgradient: "#787171",
+        lightgradient: "#000000"
       },
+        backgroundImage: {
+          hero: "url(/images/hero.webp)"
+        }
+      ,
       fontFamily: {
         galano: ['GalanoClassic', 'san-serif'],
         euclid: ['EuclidCircular'],

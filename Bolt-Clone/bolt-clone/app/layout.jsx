@@ -14,10 +14,10 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></link>
       </head>
       <body className="m-0 bg-white">
-        <main className="app">
-          <NavigationBar />        
+        <main className="app" >
+          <NavigationBar />
           {children}
-          {/* <Footer /> */}
+           <Footer />
         </main>
       </body>
     </html>
