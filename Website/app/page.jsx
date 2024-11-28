@@ -36,7 +36,7 @@ export default function Home () {
               </div>
             </div>
             <div className="text-lg">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis repellendus ullam perferendis earum, magnam iste sunt esse laborum aliquam hic dicta quia consequuntur similique voluptas temporibus neque est. Molestiae ducimus odit, perspiciatis quam ratione libero saepe provident aspernatur incidunt pariatur voluptatem optio aliquam officiis, blanditiis sed suscipit deleniti velit? Optio.
+              Hi, I’m Mark—a passionate web developer with a strong foundation in both frontend and backend development. My expertise lies in crafting responsive, user-friendly interfaces and building robust server-side applications. I’m experienced in modern web technologies like Next.js, Tailwind CSS, and database management with PostgreSQL. Recently, I’ve been enhancing my skills in optimisation, authentication systems, and scaling web applications. Whether it’s designing minimalist, tech-focused websites or diving deep into the backend, I love bringing ideas to life with clean, efficient code.  
             </div> 
           </div>
 
