@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BLAZOR_FRAMEWORK")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68f30ab9565ac65eb6c25ed0d1e7290e470d46e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e224601654551dd9bbb5b7002c7c8a476d04d5af")]
 [assembly: System.Reflection.AssemblyProductAttribute("BLAZOR_FRAMEWORK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BLAZOR_FRAMEWORK")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
