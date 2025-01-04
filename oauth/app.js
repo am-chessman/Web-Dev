@@ -5,9 +5,10 @@ import "dotenv/config"
 import router from "./routes/routes.js"
 import setupMiddleware from "./middleware/middleware.js"
 import setupPassport from "./middleware/passport-config.js"
-import rateLimiterHandler from "./utils/rate-limiter.js"
+import limiter from "./utils/rate-limiter.js"
 
 const app = express()
+app.use(limiter)
 const port = process.env.PORT || 3000
 
 //Unnecessary since inex.html is being rendered by "express.static"
@@ -16,7 +17,6 @@ const port = process.env.PORT || 3000
 //Middleware and authentication
 setupMiddleware(app)
 setupPassport()
-rateLimiterHandler()
 
 app.use(router)
 
