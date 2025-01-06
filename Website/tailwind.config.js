@@ -10,10 +10,14 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
       },
       fontFamily: {
         'jetbrains-mono': ["JetBrains Mono"]
-      }
+      }, 
+      backgroundImage: {
+        'profilePhoto': "url('/profpic.webp')",
+      },
     },
   },
   plugins: [],
