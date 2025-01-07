@@ -19,6 +19,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className="mt-0 mr-[5%] ml-[5%] font-jetbrains-mono sm:flex sm:flex-col sm:justify-center sm:items-center m-auto sm:overflow-x-hidden">
         {children}
+        <SpeedInsights/>
+        <Analytics/>
       </body>
     </html>
   );
