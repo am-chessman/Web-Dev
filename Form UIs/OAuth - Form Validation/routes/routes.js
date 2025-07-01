@@ -62,4 +62,8 @@ router.get("/failed", (req, res) => {
     res.send(`Login failed: ${error.length ? error[0] : "Unknown error"}`)
 })
 
+router.get("/password-recovery", (req,res) => {
+    res.status(200).sendFile("signup.html", { root: "./public" })
+})
+
 export default router

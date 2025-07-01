@@ -1,8 +1,8 @@
-export default function Card() {
+export default function LoginCard() {
     return (
         <div className="form-container">
 {/*
-             <div className="form-1">
+            <div className="form-1">
                 <div className="header-section">
                     <div className="welcome-text">
                         <h3>Welcome Back!</h3>

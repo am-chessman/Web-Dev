@@ -1,11 +1,11 @@
-import Card from './components/card'
+import LoginCard from './components/loginCard'
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <Card />
+      <LoginCard />
     </>
   )
 }
